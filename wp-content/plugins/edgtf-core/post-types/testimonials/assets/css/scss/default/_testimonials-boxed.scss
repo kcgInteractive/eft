@@ -1,0 +1,100 @@
+/* ==========================================================================
+   Testimonials boxed style - begin
+   ========================================================================== */
+.edgtf-testimonials-holder {
+
+    &.edgtf-testimonials-boxed {
+
+		&.edgtf-testimonials-boxed-single {
+
+			.edgtf-testimonial-content{
+				text-align: center;
+			}
+		}
+
+		&.edgtf-testimonials-no-navs {
+
+			.edgtf-testimonials {
+				margin: 0;
+				padding: 0;
+			}
+		}
+
+        .edgtf-testimonials {
+            margin: 0 -50px;
+        }
+
+        .edgtf-testimonial-content {
+            box-sizing: border-box;
+			z-index: 1;
+
+			.edgtf-testimonial-content-inner {
+				padding: 64px 58px 75px;
+				margin: 0 11px;
+				background-color: #fbfbfb;
+			}
+
+			.edgtf-testimonial-image {
+				margin: 0 0 41px;
+
+				img {
+					display: block;
+					height: 114px;
+					margin: 0 auto;
+				}
+			}
+        }
+
+        .edgtf-testimonial-author {
+            @include edgtfRelativeHolderLayout();
+			font-size: 12px;
+			text-align: center;
+            margin: 9px 0 0;
+
+			.edgtf-testimonial-author-label {
+				font-weight: 500;
+			}
+
+			.edgtf-testimonial-position {
+
+				&:before {
+					@include edgtfRelativeHolderLayout();
+					content: "/";
+					width: auto;
+					margin: 0 2px 0 0;
+				}
+			}
+        }
+
+        /* Light/Dark styles */
+        &.edgtf-testimonials-light {
+
+            .edgtf-testimonial-title,
+            .edgtf-testimonial-text,
+            .edgtf-testimonial-author {
+                color: #fff;
+            }
+
+            .owl-dots {
+	
+	            .owl-dot {
+		
+		            span {
+			            background-color: rgba(#fff, .3);
+		            }
+		            
+		            &.active {
+			
+			            span {
+				            background-color: #fff;
+			            }
+		            }
+	            }
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Testimonials boxed style - end
+   ========================================================================== */
+

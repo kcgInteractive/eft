@@ -1,0 +1,157 @@
+/* ==========================================================================
+# Team style - begin
+	========================================================================== */
+
+/* Team type simple - begin
+========================================================================== */
+
+.edgtf-team {
+	@include edgtfRelativeHolderLayout();
+	
+	.edgtf-team-info-tb {
+		@include edgtfAbsoluteHolderLayout();
+		text-align: center;
+		opacity: 0;
+		background-color: rgba($default-heading-color, .4);
+		@include edgtfTransition(opacity 0.2s ease-out);
+		
+		.touch & {
+			cursor: pointer;
+		}
+		
+		&:hover{
+			opacity: 1;
+		}
+	}
+	
+	.edgtf-team-info-tc {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		display: inline-block;
+		vertical-align: middle;
+		width: 100%;
+		padding: 10px;
+		text-align: center;
+		box-sizing: border-box;
+		z-index: 10;
+		@include edgtfTransform(translateY(-50%));
+		
+		.edgtf-icon-shortcode {
+			margin: 0 8px;
+			font-size: 20px;
+			color: #fff;
+			@include edgtfTransition(color .2s ease-out);
+			
+			&:hover {
+				color: $first-main-color;
+			}
+			
+			a,
+			.edgtf-icon-element {
+				color: inherit;
+				@include edgtfTransition(none);
+			}
+		}
+	}
+
+	&.info-bellow {
+		
+		.edgtf-team-inner {
+			text-align: center;
+			width: 100%;
+		}
+
+		.edgtf-team-image {
+			position: relative;
+			overflow: hidden;
+			display: block;
+			margin: 0 auto;
+
+			img {
+				display: block;
+			}
+		}
+
+		.edgtf-team-title-holder {
+			margin: 37px 0 0;
+
+			.edgtf-team-name {
+				font-weight: 500;
+				margin: 33px 0 0;
+			}
+
+			.edgtf-team-position {
+				margin: 13px 0 27px;
+			}
+		}
+
+		.edgtf-team-text {
+			margin: 0 0 27px;
+
+			.edgtf-team-excerpt {
+				margin: 7px 0 10px 0;
+			}
+		}
+
+		.edgtf-team-social {
+			opacity: 0;
+			@include edgtfTransform(translate3d(0,30px,0));
+			@include edgtfTransition(all .3s);
+		}
+
+		&:hover {
+			.edgtf-team-info-tb {
+				opacity: 1;
+			}
+			
+			.edgtf-team-social {
+				opacity: 1;
+				@include edgtfTransform(translate3d(0,0,0));
+			}
+		}
+	}
+
+	&.info-hover {
+		
+		.edgtf-team-inner {
+			position: relative;
+			
+			&:hover {
+				
+				.edgtf-team-info {
+					opacity: 1;
+				}
+			}
+		}
+
+		.edgtf-team-image img {
+			display: block;
+		}
+		
+		.edgtf-team-name {
+			margin: 0;
+			font-weight: 500;
+		}
+		
+		.edgtf-team-position {
+			margin: 11px 0 0;
+		}
+		
+		.edgtf-team-social-holder-between {
+			margin: 29px 0 0;
+		}
+
+		.edgtf-team-name,
+		.edgtf-team-position,
+		.edgtf-team-text,
+		.edgtf-icon-shortcode,
+		.edgtf-icon-shortcode > * {
+			color: #fff;
+		}
+	}
+}
+
+/* ==========================================================================
+# Team style - end
+========================================================================== */

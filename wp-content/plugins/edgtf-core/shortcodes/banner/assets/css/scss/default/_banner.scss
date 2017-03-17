@@ -1,0 +1,55 @@
+/* ==========================================================================
+   Banner shortcode style - begin
+   ========================================================================== */
+
+.edgtf-banner-holder {
+    @include edgtfRelativeHolderLayout();
+	
+	.edgtf-banner-image {
+		@include edgtfRelativeHolderLayout();
+		
+		img {
+			display: block;
+		}
+	}
+	
+	.edgtf-banner-text-holder {
+		@include edgtfAbsoluteHolderLayout();
+	}
+	
+	.edgtf-banner-text-inner {
+		@include edgtfRelativeHolderLayout();
+		height: 100%;
+		padding: 7% 6% 5% 8%;
+		box-sizing: border-box;
+		
+		@include laptop-landscape {
+			padding: 6% 4% 4% 7%;
+		}
+		
+		@include ipad-portrait {
+			padding: 25px 30px;
+		}
+	}
+	
+	.edgtf-banner-subtitle {
+		margin: 0;
+	}
+	
+	.edgtf-banner-title {
+		margin: 4px 0 0;
+	}
+	
+	.edgtf-banner-text {
+		margin: 14px 0 0;
+		line-height: 1em;
+	}
+
+	.edgtf-banner-link {
+		@include edgtfAbsoluteHolderLayout();
+		z-index: 1;
+	}
+}
+/* ==========================================================================
+   Banner shortcode style - end
+   ========================================================================== */

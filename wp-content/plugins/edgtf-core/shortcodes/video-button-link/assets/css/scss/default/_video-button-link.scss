@@ -1,0 +1,39 @@
+/* ==========================================================================
+   Video Button shortcode start styles
+   ========================================================================== */
+
+.edgtf-video-button-link-holder {
+	@include edgtfRelativeHolderLayout();
+	
+	.edgtf-video-button-link-play {
+		@include edgtfRelativeHolderLayout();
+		font-size: 14px;
+		line-height: 1;
+		
+		.edgtf-video-button-link-play-inner {
+			position: relative;
+			display: block;
+			text-align: center;
+		}
+
+		span {
+			display: block;
+			line-height: inherit;
+
+			&.edgtf-video-button-link-text,
+			&.arrow_triangle-right_alt {
+				@include edgtfRelativeHolderLayout();
+				width: auto;
+			}
+
+			&:before {
+				position: relative;
+				display: block;
+				line-height: inherit;
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Video Button shortcode end styles
+   ========================================================================== */

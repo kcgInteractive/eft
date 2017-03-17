@@ -1,0 +1,1 @@
+<?php do_action('fluid_edge_get_footer_template');

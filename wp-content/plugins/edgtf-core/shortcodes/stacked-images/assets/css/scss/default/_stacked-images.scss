@@ -1,0 +1,38 @@
+/* ==========================================================================
+   Stacked Images style - begin
+   ========================================================================== */
+
+.edgtf-stacked-images-holder {
+	@include edgtfRelativeHolderLayout();
+	margin: 0 0 90px 0;
+	
+	.edgtf-si-images {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		top: 70px;
+		margin: 0 96px 90px 0;
+		opacity: 0;
+		@include edgtfTransition(opacity .55s cubic-bezier(0.23, 1, 0.32, 1), top .55s cubic-bezier(0.23, 1, 0.32, 1));
+		
+		&.edgtf-appeared {
+			opacity: 1;
+			top: 0;
+			
+			.edgtf-si-stack-image {
+				top: 90px;
+			}
+		}
+		
+		.edgtf-si-stack-image {
+			position: absolute;
+			top: 160px;
+			left: 96px;
+			display: block;
+			@include edgtfTransition(top .7s cubic-bezier(0.23, 1, 0.32, 1));
+		}
+	}
+}
+/* ==========================================================================
+   Stacked Images style - end
+   ========================================================================== */

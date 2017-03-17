@@ -1,0 +1,227 @@
+/* ==========================================================================
+   Tabs shortcode style - begin
+   ========================================================================== */
+
+.edgtf-tabs {
+	@include edgtfRelativeHolderLayout();
+	
+	.edgtf-tabs-nav {
+		@include edgtfRelativeHolderLayout();
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		
+		li {
+			float: left;
+			margin: 0;
+			padding: 0;
+			
+			.edgtf-tabs-title-image {
+
+				img {
+					display: block;
+					margin: 0 auto;
+				}
+			}
+			
+			.edgtf-tab-title-description {
+				display: block;
+			}
+
+			p {
+				margin: 0 0 10px;
+			}
+			
+			a {
+				@include edgtfRelativeHolderLayout();
+				width: auto;
+				font-size: 12px;
+				padding: 7px 26px;
+				line-height: 25px;
+				font-weight: 300;
+				letter-spacing: 1px;
+				color: $default-text-color;
+				box-sizing: border-box;
+				@include edgtfTransition(color .2s ease-out, background-color .2s ease-out, border-color .2s ease-out);
+			}
+		}
+	}
+	
+	.edgtf-tab-container {
+		@include edgtfRelativeHolderLayout();
+		
+		p {
+			margin: 0;
+		}
+	}
+	
+	&.edgtf-tabs-standard {
+		
+		.edgtf-tabs-nav {
+			
+			li {
+				
+				a {
+					background-color: #f6f6f6;
+				}
+				
+				&.ui-state-active a,
+				&.ui-state-hover a {
+					color: #fff;
+					background-color: $first-main-color;
+				}
+			}
+		}
+		
+		.edgtf-tab-container {
+			margin: 25px 0 0;
+		}
+	}
+	
+	&.edgtf-tabs-boxed {
+		
+		.edgtf-tabs-nav {
+			
+			li {
+				margin: 0 12px 0 0;
+
+				a {
+					color: #fff;
+					background-color: $default-heading-color;
+				}
+				
+				&.ui-state-active a,
+				&.ui-state-hover a {
+					color: #fff;
+					background-color: $first-main-color;
+				}
+				
+				&:last-child {
+					margin: 0;
+				}
+			}
+		}
+		
+		.edgtf-tab-container {
+			margin: 25px 0 0;
+		}
+	}
+	
+	&.edgtf-tabs-simple {
+		
+		.edgtf-tabs-nav {
+			display: table;
+			text-align: center;
+			border-bottom: 1px solid $default-border-color;
+			
+			li {
+				position: relative;
+				display: table-cell;
+				float: none;
+				margin: 0 31px 0 0;
+				
+				a {
+					padding: 13px 0;
+					font-size: 16px;
+					line-height: 26px;
+				}
+
+				&.edgtf-tabs-nav-line {
+					position: absolute;
+					left:0;
+					width: 0;
+					height: 0;
+					opacity:0;
+					bottom: -1px;
+					border-top: 1px solid $default-heading-color;
+					@include edgtfTransition(opacity .2s .4s, width .0s .6s, left .4s $aux-easing);
+				}
+				
+				&.ui-state-active a,
+				&.ui-state-hover a {
+					color: $default-heading-color;
+				}
+				
+				&:last-child {
+					margin: 0;
+				}
+			}
+
+			&:hover {
+
+				.edgtf-tabs-nav-line {
+					opacity:1;
+					@include edgtfTransition(width .4s, left .6s $aux-easing);
+				}
+			}
+		}
+		
+		.edgtf-tab-container {
+			padding: 31px 0;
+			border-bottom: 1px solid $default-border-color;
+		}
+	}
+	
+	&.edgtf-tabs-vertical {
+		
+		.edgtf-tabs-nav {
+			display: table-cell;
+			vertical-align: top;
+			width: 140px;
+			height: 100%;
+			border-right: 1px solid $default-border-color;
+			box-sizing: border-box;
+			
+			li {
+				display: block;
+				float: none;
+				margin: 0 0 24px;
+				
+				a {
+					font-size: 16px;
+					line-height: 26px;
+				}
+
+				&.edgtf-tabs-nav-line {
+					position: absolute;
+					right: 0;
+					width: 0;
+					height: 0;
+					opacity:0;
+					right: -1px;
+					border-right: 1px solid $default-heading-color;
+					@include edgtfTransition(opacity .2s .4s, height .0s .6s, top .4s $aux-easing);
+				}
+				
+				&.ui-state-active a,
+				&.ui-state-hover a {
+					color: $default-heading-color;
+				}
+				
+				&:last-child {
+					margin: 0;
+				}
+			}
+
+			&:hover {
+
+				.edgtf-tabs-nav-line {
+					opacity:1;
+					@include edgtfTransition(height .4s, top .6s $aux-easing);
+				}
+			}
+		}
+		
+		.edgtf-tab-container {
+			display: table-cell;
+			vertical-align: top;
+			width: calc(100% - 140px);
+			height: 100%;
+			padding: 0 0 0 45px;
+			box-sizing: border-box;
+		}
+	}
+}
+/* ==========================================================================
+   Tabs shortcode style - end
+   ========================================================================== */

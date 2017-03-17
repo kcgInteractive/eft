@@ -1,0 +1,289 @@
+/* Woocommerce Product Page shortcode style - begin
+========================================================================== */
+
+div.woocommerce {
+
+    > .single-product {
+
+        .images {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0;
+            padding: 0;
+	        
+	        > a {
+		        overflow: hidden;
+		
+		        &:hover {
+			
+			        img {
+				        @include edgtfTransform(scale(1.06) translateZ(0));
+			        }
+		        }
+		
+		        img {
+			        -webkit-transition: -webkit-transform .3s ease-in-out;
+			        -moz-transition: -moz-transform .3s ease-in-out;
+			        transition: transform .3s ease-in-out;
+		        }
+	        }
+
+            a {
+                @include edgtfRelativeHolderLayout();
+
+                img {
+                    position: relative;
+                    width: 100%;
+                    display: block;
+	                @include edgtfTransform(scale(1) translateZ(0));
+                }
+            }
+
+            .thumbnails {
+                margin: 0 -10px;
+
+                a {
+                    margin: 20px 0 0;
+                    padding: 0 10px;
+                    box-sizing: border-box;
+                    opacity: 1;
+                    @include edgtfTransition(opacity .2s ease-in-out);
+    
+                    &:hover {
+                        opacity: 0.7;
+                    }
+                }
+
+                &.columns-2 {
+                    
+                    a {
+                        float: left;
+                        width: 50%;
+                    }
+                }
+
+                &.columns-4 {
+                    
+                    a {
+                        float: left;
+                        width: 25%;
+                    }
+                }
+            }
+        }
+	
+	    .woocommerce-tabs {
+		    @include edgtfRelativeHolderLayout();
+		    margin: 50px 0 0;
+		
+		    h2 {
+			    font-size: 18px;
+			    font-weight: 700;
+			    margin: 0 0 15px;
+		    }
+		
+		    ul.tabs {
+			    @include edgtfRelativeHolderLayout();
+			    list-style: none;
+			    margin: 0;
+			    padding: 0;
+			    border-bottom: 1px solid $default-border-color;
+			    clear: both;
+			
+			    > li {
+				    position: relative;
+				    display: inline-block;
+				    vertical-align: middle;
+				    float: left;
+				    margin: 0;
+				    padding: 0;
+				
+				    a {
+					    position: relative;
+					    display: inline-block;
+					    vertical-align: top;
+					    padding: 0 3px 12px;
+					    font-weight: 500;
+					    color: #999;
+					    margin-right: 35px;
+					
+					    &:after {
+						    content: '';
+						    position: absolute;
+						    bottom: -1px;
+						    left: 0;
+						    display: block;
+						    height: 1px;
+						    width: 100%;
+						    background-color: transparent;
+						    @include edgtfTransition(all 0.2s ease-in-out);
+					    }
+				    }
+				
+				    &:last-child {
+					
+					    a {
+						    margin-right: 0;
+					    }
+				    }
+				
+				    &.active {
+					
+					    a {
+						    color: $default-heading-color;
+						
+						    &:after {
+							    height: 1px;
+							    bottom: -1px;
+							    background-color: $default-heading-color;
+						    }
+					    }
+				    }
+			    }
+		    }
+		
+		    .entry-content {
+			    padding: 22px 0;
+		    }
+		
+		    table {
+			    margin: 0 0 20px;
+			
+			    tr, th {
+				    border: 0;
+			    }
+			
+			    td, th {
+				    padding: 3px 0;
+				    vertical-align: middle;
+				    text-align: left;
+			    }
+			
+			    th {
+				    color: $default-heading-color;
+				    width: 1%;
+				    padding: 0 10px 0 0;
+			    }
+			
+			    td {
+				    width: 99%;
+			    }
+		    }
+		
+		    #reviews {
+			
+			    div[itemprop="description"] {
+				    padding: 0;
+			    }
+			
+			    ol.commentlist {
+				    list-style: none;
+				
+				    li {
+					    padding-top: 15px;
+					
+					    &:first-child {
+						    padding: 0;
+					    }
+				    }
+				
+				    .comment_container {
+					    @include edgtfRelativeHolderLayout();
+					
+					    img {
+						    float: left;
+						    width: 60px;
+					    }
+					
+					    .comment-text {
+						    padding: 0 0 0 80px;
+						
+						    .star-rating {
+							    margin: 0;
+						    }
+						
+						    p {
+							    display: block;
+							    margin: 5px 0 0;
+						    }
+					    }
+				    }
+			    }
+			
+			    .comment-respond {
+				    margin-top: 15px;
+				
+				    .comment-reply-title {
+					    margin: 0 0 10px;
+					    font-weight: 700;
+				    }
+				
+				    .stars {
+					    overflow: hidden;
+					    padding: 0;
+					    margin: 0;
+				    }
+				
+				    .stars a {
+					    position: relative;
+					    display: inline-block;
+					    color: transparent;
+					    font-size: 0;
+					    margin: 0;
+					
+					    &:before {
+						    position: relative;
+						    display: inline-block;
+						    vertical-align: middle;
+						    font-family: "ElegantIcons";
+						    content: "\e031";
+						    font-size: 12px;
+						    line-height: 1;
+						    letter-spacing: 3px;
+						    color: $default-heading-color;
+						    overflow: hidden;
+						    z-index: -1;
+						    -webkit-font-smoothing: antialiased;
+						    -moz-osx-font-smoothing: grayscale;
+					    }
+					
+					    &.active:after {
+						    position: absolute;
+						    right: 0px;
+						    bottom: 7px;
+						    display: block;
+						    font-family: "ElegantIcons";
+						    font-size: 12px;
+						    line-height: 1;
+						    letter-spacing: 3px;
+						    color: $default-heading-color;
+						    content: "\e033\e033\e033\e033\e033";
+						    -webkit-font-smoothing: antialiased;
+						    -moz-osx-font-smoothing: grayscale;
+					    }
+				    }
+				
+				    .comment-form-comment label {
+					    display: block;
+					    margin: 0 0 10px;
+				    }
+			    }
+		    }
+	    }
+	
+	    .related.products,
+	    .upsells.products {
+		    margin: 51px 0 0;
+		
+		    > h2 {
+			    display: block;
+			    margin: 0 0 88px;
+			    text-align: center;
+		    }
+	    }
+    }
+}
+
+/* Woocommerce Product Page shortcode style - end
+========================================================================== */

@@ -1,0 +1,234 @@
+/* ==========================================================================
+   WooCommerce Single Product Page Responsive styles - begin
+   ========================================================================== */
+
+@include laptop-landscape-large {
+    
+    .edgtf-woo-single-page {
+        
+        .edgtf-single-product-content {
+            
+            .images {
+                padding: 0 30px 0 0;
+            }
+        }
+	    
+	    .edgtf-single-product-summary {
+		    padding: 0 0 0 30px;
+	    }
+	
+	    .woocommerce-tabs {
+		
+		    ul.tabs {
+			
+			    > li {
+				
+				    a {
+					    margin-right: 35px;
+				    }
+			    }
+		    }
+	    }
+    }
+}
+
+@include laptop-landscape-medium {
+	
+	.edgtf-woo-single-page {
+		
+		.edgtf-single-product-content {
+			
+			.images {
+				padding: 0 20px 0 0;
+			}
+		}
+		
+		.edgtf-single-product-summary {
+			padding: 0 0 0 20px;
+		}
+		
+		.woocommerce-tabs {
+			
+			ul.tabs {
+				
+				> li {
+					
+					a {
+						margin-right: 25px;
+					}
+				}
+			}
+		}
+		
+		.related.products,
+		.upsells.products {
+            margin: 31px 0 0;
+            
+            > h2 {
+                margin: 0 0 58px;
+            }
+		}
+	}
+}
+
+@include ipad-landscape {
+    
+    .edgtf-woo-single-page {
+        
+        .edgtf-single-product-content {
+            
+            .images,
+            .edgtf-single-product-summary {
+                float: none;
+                width: 100%;
+                padding: 0;
+            }
+            
+            .edgtf-single-product-summary {
+                margin: 30px 0 0;
+            }
+        }
+    }
+}
+
+@include ipad-portrait {
+    
+    .edgtf-woo-single-page {
+	
+	    .edgtf-single-product-content {
+		    padding: 0 0 42px;
+	    }
+	
+	    .woocommerce-tabs {
+		
+		    ul.tabs {
+			
+			    > li {
+				
+				    a {
+					    margin-right: 18px;
+				    }
+			    }
+		    }
+	    }
+        
+        &.edgtf-woo-single-thumb-on-left-side {
+            
+            .edgtf-single-product-content {
+                
+                .images {
+                    
+                    a {
+                        
+                        &.woocommerce-main-image {
+                            width: 100%;
+                            margin: 0;
+                        }
+                    }
+                    
+                    .thumbnails {
+                        margin: 0 -10px;
+                        
+                        a {
+                            margin: 20px 0 0;
+                            padding: 0 10px;
+                        }
+                        
+                        &.columns-4 {
+                            position: inherit;
+                            top: auto;
+                            left: auto;
+                            display: inherit;
+                            vertical-align: top;
+                            width: auto;
+                            height: auto;
+                            
+                            a {
+                                float: left;
+                                width: 25%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    
+    .edgtf-woo-single-page {
+        
+        .edgtf-single-product-content {
+            
+            .images {
+                
+                .thumbnails {
+                    
+                    &.columns-2 {
+                        
+                        a {
+                            float: none;
+                            width: 100%;
+                        }
+                    }
+                    
+                    &.columns-4 {
+                        
+                        a {
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+        }
+	
+	    .woocommerce-tabs {
+		
+		    ul.tabs {
+			
+			    > li {
+					float: none;
+				    width: 100%;
+				    border-bottom: 1px solid $default-border-color;
+				    
+				    &:last-child {
+					    border-bottom: 0;
+				    }
+				    
+				    a {
+					    display: block;
+					    margin-right: 0;
+					    padding: 9px 0;
+					    
+					    &:after {
+						    display: none;
+					    }
+				    }
+			    }
+		    }
+	    }
+        
+        &.edgtf-woo-single-thumb-on-left-side {
+            
+            .edgtf-single-product-content {
+                
+                .images {
+                    
+                    .thumbnails {
+                        
+                        &.columns-4 {
+                            
+                            a {
+                                width: 50%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* ==========================================================================
+   WooCommerce Single Product Page Responsive styles - end
+   ========================================================================== */

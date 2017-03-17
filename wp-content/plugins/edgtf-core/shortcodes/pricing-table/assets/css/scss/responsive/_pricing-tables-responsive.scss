@@ -1,0 +1,204 @@
+/* ==========================================================================
+   Pricing Tables shortcode responsive style - begin
+   ========================================================================== */
+
+@include laptop-landscape {
+
+	.edgtf-pricing-tables {
+
+		$pricing_table_columns: ('edgtf-five-columns');
+		@for $i from 0 to length($pricing_table_columns) {
+			&.#{nth($pricing_table_columns, $i+1)} {
+				$column_width: 100%/3;
+
+				.edgtf-price-table {
+					width: $column_width;
+
+					@media only screen and (min-width: $ipad-portrait-plus-pixel) {
+
+						&:nth-child(3n+1) {
+							clear: both;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@include ipad-landscape {
+
+	.edgtf-pricing-tables {
+
+		&.edgtf-pt-simple {
+
+			.edgtf-pt-inner {
+
+				ul {
+
+					li {
+
+						&.edgtf-pt-prices {
+							padding: 59px 5px 27px;
+
+							.edgtf-pt-price-inner {
+								padding: 0 7px 0 0;
+							}
+
+							.edgtf-pt-title-inner {
+								padding: 0 0 0 7px;
+							}
+						}
+
+						.edgtf-pt-price {
+							font-size: 60px;
+						}
+
+						.edgtf-pt-value {
+							font-size: 20px;
+						}
+
+						.edgtf-pt-title {
+							font-size: 20px;
+						}
+
+						.edgtf-pt-mark {
+							margin: 9px 0 0;
+						}
+					}
+				}
+			}
+		}
+
+		$pricing_table_columns: ('edgtf-four-columns');
+		@for $i from 0 to length($pricing_table_columns) {
+			&.#{nth($pricing_table_columns, $i+1)} {
+				$column_width: 100%/2;
+
+				.edgtf-price-table {
+					width: $column_width;
+
+					@media only screen and (min-width: $ipad-portrait-plus-pixel) {
+
+						&:nth-child(2n+1) {
+							clear: both;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@include ipad-landscape {
+
+	.edgtf-price-table {
+
+		.edgtf-pt-inner {
+
+			ul {
+
+				li {
+					padding: 12px 20px;
+
+					&.edgtf-pt-prices {
+						padding: 22px 10px 0;
+
+						.edgtf-pt-price-inner,
+						.edgtf-pt-title-inner {
+							display: block !important;
+							width: 100% !important;
+							text-align: center !important;
+						}
+					}
+
+					.edgtf-pt-title-inner {
+						padding: 7px 0 0 !important;
+					}
+
+					&.edgtf-pt-content {
+						padding: 12px 10px;
+					}
+
+					&.edgtf-pt-button {
+						padding: 18px 15px 50px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include ipad-portrait {
+
+	.edgtf-pricing-tables {
+
+		$pricing_table_columns: ('edgtf-four-columns', 'edgtf-five-columns');
+		@for $i from 0 to length($pricing_table_columns) {
+			&.#{nth($pricing_table_columns, $i+1)} {
+				$column_width: 100%/2;
+
+				.edgtf-price-table {
+					width: $column_width;
+
+					&:nth-child(2n+1) {
+						clear: both;
+					}
+				}
+			}
+		}
+
+		&.edgtf-three-columns {
+
+			.edgtf-price-table {
+				width: 100%;
+			}
+		}
+	}
+}
+
+@include phone-landscape {
+
+	.edgtf-pricing-tables {
+
+		$pricing_table_columns: ('edgtf-two-columns', 'edgtf-three-columns', 'edgtf-four-columns', 'edgtf-five-columns');
+		@for $i from 0 to length($pricing_table_columns) {
+			&.#{nth($pricing_table_columns, $i+1)} {
+
+				.edgtf-price-table {
+					width: 100%;
+				}
+			}
+		}
+
+		.edgtf-pt-inner {
+
+			ul {
+
+				li {
+
+					&.edgtf-pt-prices {
+
+						.edgtf-pt-price-inner,
+						.edgtf-pt-title-inner {
+							display: table-cell !important;
+							vertical-align: middle !important;
+							width: 50% !important;
+						}
+
+						.edgtf-pt-title-inner {
+							text-align: left !important;
+						}
+
+						.edgtf-pt-price-inner {
+							text-align: right !important;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Pricing Tables shortcode responsive style - end
+   ========================================================================== */

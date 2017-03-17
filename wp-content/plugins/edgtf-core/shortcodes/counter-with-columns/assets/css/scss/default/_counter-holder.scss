@@ -1,0 +1,68 @@
+/* ==========================================================================
+   Counter Holder shortcode style - begin
+   ========================================================================== */
+
+.edgtf-counter-wc-holder {
+	@include edgtfRelativeHolderLayout();
+	
+	&.edgtf-ch-alignment-left {
+		text-align: left;
+	}
+	
+	&.edgtf-ch-alignment-center {
+		text-align: center;
+	}
+	
+	&.edgtf-ch-alignment-right {
+		text-align: right;
+	}
+	
+	.edgtf-counter-holder {
+		float: left;
+		box-sizing: border-box;
+	}
+	
+	$space_label: ('no', 'tiny', 'small', 'normal');
+	$space_width: (0, 5, 10, 15);
+	
+	@for $i from 0 to length($space_label) {
+		&.edgtf-ch-#{nth($space_label,$i+1)}-space {
+			$column_width: nth($space_width,$i+1);
+			$column_width_margin: $column_width * 2;
+			
+			.edgtf-ch-inner {
+				@if($column_width == 0) {
+					margin: 0;
+				} @else {
+					margin: 0 -#{$column_width}px;
+				}
+			}
+			
+			.edgtf-counter-holder {
+				padding: 0 #{$column_width}px;
+				margin: 0 0 #{$column_width_margin}px;
+			}
+		}
+	}
+	
+	$columns: ('2', '3', '4', '5', '6');
+	@for $i from 0 to length($columns) {
+		&.edgtf-ch-columns-#{nth($columns, $i+1)} {
+			$column_width: 100%/($i+2);
+			
+			.edgtf-counter-holder {
+				width: $column_width;
+				
+				@media only screen and (min-width: $ipad-landscape-plus-pixel) {
+					
+					&:nth-child(#{$i+2}n+1) {
+						clear: both;
+					}
+				}
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Counter Holder shortcode style - end
+   ========================================================================== */

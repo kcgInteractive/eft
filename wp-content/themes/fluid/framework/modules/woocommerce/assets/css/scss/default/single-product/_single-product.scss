@@ -1,0 +1,485 @@
+/* ==========================================================================
+   WooCommerce Single Product Page styles - begin
+   ========================================================================== */
+
+.edgtf-woo-single-page {
+
+	&.edgtf-woo-single-thumb-on-left-side {
+
+		.edgtf-single-product-content {
+
+			.images {
+
+				a {
+
+					&.woocommerce-main-image {
+						width: calc(100% - 119px);
+						margin: 0 0 0 119px;
+					}
+				}
+
+				.thumbnails {
+					margin: 0;
+
+					a {
+						margin: 0;
+						padding: 14px 0 0;
+
+						&:first-child {
+							padding: 0;
+						}
+					}
+
+					&.columns-4 {
+						position: absolute;
+						top: 0;
+						left: 0;
+						display: inline-block;
+						vertical-align: top;
+						width: 105px;
+						height: 100%;
+
+						a {
+							float: none;
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.product {
+		@include edgtfRelativeHolderLayout();
+		float: none;
+		margin: 0 0 46px;
+	}
+
+	.edgtf-single-product-content {
+		@include edgtfRelativeHolderLayout();
+		clear: both;
+		margin: 0 0 30px;
+		padding: 0 0 72px;
+
+		&:after {
+			position: absolute;
+			content: " ";
+			width: 9999px;
+			height: 1px;
+			left: -50%;
+			bottom: 0;
+			background: $default-border-color;
+		}
+
+		.images {
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+			width: 46%;
+			margin: 0;
+			padding: 0 41px 0 0;
+			float: left;
+			box-sizing: border-box;
+
+			> a {
+				overflow: hidden;
+
+				&:hover {
+
+					img {
+						@include edgtfTransform(scale(1.06) translateZ(0));
+					}
+				}
+
+				img {
+					-webkit-transition: -webkit-transform .3s ease-in-out;
+					-moz-transition: -moz-transform .3s ease-in-out;
+					transition: transform .3s ease-in-out;
+				}
+			}
+
+			a {
+				@include edgtfRelativeHolderLayout();
+
+				img {
+					position: relative;
+					width: 100%;
+					display: block;
+					z-index: 1;
+					@include edgtfTransform(scale(1) translateZ(0));
+
+					&.edgtf-fake-featured-image {
+						position: absolute;
+						top: 0;
+						left: 0;
+						z-index: 2;
+					}
+				}
+			}
+
+			.thumbnails {
+				margin: 0 -10px;
+
+				a {
+					margin: 26px 0 0;
+					padding: 0 10px;
+					box-sizing: border-box;
+					opacity: 1;
+					@include edgtfTransition(opacity .2s ease-in-out);
+
+					&:hover {
+						opacity: 0.7;
+					}
+				}
+
+				&.columns-2 {
+
+					a {
+						float: left;
+						width: 50%;
+					}
+				}
+
+				&.columns-3 {
+
+					a {
+						float: left;
+						width: 33.3333333%;
+					}
+				}
+
+				&.columns-4 {
+
+					a {
+						float: left;
+						width: 25%;
+					}
+				}
+			}
+		}
+	}
+
+	.edgtf-single-product-summary {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		width: 54%;
+		padding: 0 0 0 41px;
+		float: left;
+		box-sizing: border-box;
+
+		.edgtf-single-product-title {
+			display: block;
+			margin: 0 0 19px;
+			line-height: 1em;
+		}
+
+		.price {
+			position: relative;
+			display: block;
+			margin: 17px 0 0;
+			font-size: 18px;
+			line-height: 1;
+
+			* {
+				font-size: inherit;
+				line-height: inherit;
+			}
+
+			del {
+				margin: 0 8px 0 0;
+				color: #999;
+			}
+
+			ins {
+				text-decoration: none;
+			}
+		}
+
+		.woocommerce-product-rating {
+			@include edgtfRelativeHolderLayout();
+			line-height: 1;
+			margin: 22px 0 3px;
+		}
+
+		div[itemprop="description"] {
+			@include edgtfRelativeHolderLayout();
+			padding: 19px 0;
+
+			p {
+				margin: 0;
+			}
+		}
+
+		.product_meta {
+			margin: 17px 0 0;
+
+			> span {
+				display: block;
+				margin: 0 0 8px;
+				color: $default-heading-color;
+				font-size: 1.143em;
+				font-weight: 300;
+				
+				.sku {
+					color: $default-text-color;
+					font-size: 14px;
+					font-weight: 400;
+				}
+
+				a {
+					color: $default-text-color;
+					font-size: 14px;
+					font-weight: 300;
+
+					&:hover {
+						color: $default-heading-color;
+					}
+				}
+			}
+		}
+
+		.edgtf-woo-social-share-holder {
+			@include edgtfRelativeHolderLayout();
+			margin: 0;
+
+			> * {
+				display: table-cell;
+				vertical-align: middle;
+			}
+
+			> span {
+				padding: 0 6px 0 0;
+				color: $default-heading-color;
+				font-size: 1.142857142857143em;
+				font-weight: 500;
+			}
+		}
+
+		p.stock.out-of-stock,
+		p.stock.in-stock {
+			color: $default-heading-color;
+			margin: 18px 0 0;
+		}
+
+		form.cart {
+			@include edgtfRelativeHolderLayout();
+			margin: 47px 0 0;
+		}
+
+		.edgtf-quantity-buttons {
+			margin: 0 29px 0 0;
+		}
+	}
+
+	.woocommerce-tabs {
+		@include edgtfRelativeHolderLayout();
+		margin: 50px 0 0;
+
+		h2 {
+			display: none;
+		}
+
+		ul.tabs {
+			@include edgtfRelativeHolderLayout();
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			border-bottom: 1px solid $default-border-color;
+			clear: both;
+
+			> li {
+				position: relative;
+				display: inline-block;
+				vertical-align: middle;
+				float: left;
+				margin: 0;
+				padding: 0;
+
+				a {
+					position: relative;
+					display: inline-block;
+					vertical-align: top;
+					padding: 0 3px 12px;
+					font-weight: 300;
+					color: $default-text-color;
+					margin: 0 50px 0 0;
+
+					&:after {
+						content: '';
+						position: absolute;
+						bottom: -1px;
+						left: 0;
+						display: block;
+						height: 1px;
+						width: 100%;
+						background-color: transparent;
+						@include edgtfTransition(all 0.2s ease-in-out);
+					}
+				}
+				
+				&:last-child {
+					
+					a {
+						margin-right: 0;
+					}
+				}
+
+				&.active {
+
+					a {
+						color: $default-heading-color;
+
+						&:after {
+							height: 1px;
+							bottom: -1px;
+							background-color: $default-heading-color;
+						}
+					}
+				}
+			}
+		}
+
+		.entry-content {
+			padding: 22px 0;
+		}
+
+		table {
+			margin: 0 0 20px;
+
+			tr, th {
+				border: 0;
+			}
+
+			td, th {
+				padding: 3px 0;
+				vertical-align: middle;
+				text-align: left;
+			}
+
+			th {
+				color: $default-heading-color;
+				width: 1%;
+				padding: 0 10px 0 0;
+			}
+
+			td {
+				width: 99%;
+			}
+		}
+
+		#reviews {
+			
+			div[itemprop="description"] {
+				padding: 0;
+			}
+
+			ol.commentlist {
+				list-style: none;
+
+				li {
+					padding-top: 15px;
+
+					&:first-child {
+						padding: 0;
+					}
+				}
+
+				.comment_container {
+					@include edgtfRelativeHolderLayout();
+
+					img {
+						float: left;
+						width: 60px;
+					}
+
+					.comment-text {
+						padding: 0 0 0 80px;
+
+						.star-rating {
+							margin: 0;
+						}
+
+						p {
+							display: block;
+							margin: 5px 0 0;
+						}
+					}
+				}
+			}
+
+			.comment-respond {
+				margin-top: 15px;
+
+				.comment-reply-title {
+					margin: 0 0 10px;
+				}
+
+				.stars {
+					overflow: hidden;
+					padding: 0;
+					margin: 0;
+				}
+
+				.stars a {
+					position: relative;
+					display: inline-block;
+					color: transparent;
+					font-size: 0;
+					margin: 0;
+
+					&:before {
+						position: relative;
+						display: inline-block;
+						vertical-align: middle;
+						font-family: "ElegantIcons";
+						content: "\e031";
+						font-size: 12px;
+						line-height: 1;
+						letter-spacing: 3px;
+						color: $default-heading-color;
+						overflow: hidden;
+						z-index: -1;
+						-webkit-font-smoothing: antialiased;
+						-moz-osx-font-smoothing: grayscale;
+					}
+
+					&.active:after {
+						position: absolute;
+						right: 0px;
+						bottom: 7px;
+						display: block;
+						font-family: "ElegantIcons";
+						font-size: 12px;
+						line-height: 1;
+						letter-spacing: 3px;
+						color: $default-heading-color;
+						content: "\e033\e033\e033\e033\e033";
+						-webkit-font-smoothing: antialiased;
+						-moz-osx-font-smoothing: grayscale;
+					}
+				}
+
+				.comment-form-comment label {
+					display: block;
+					margin: 0 0 10px;
+				}
+			}
+		}
+	}
+
+	.related.products,
+	.upsells.products {
+		margin: 51px 0 0;
+
+		> h2 {
+			display: block;
+			margin: 0 0 88px;
+			text-align: left;
+		}
+	}
+}
+
+/* ==========================================================================
+   WooCommerce Single Product Page styles - end
+   ========================================================================== */

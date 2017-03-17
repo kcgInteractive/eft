@@ -1,0 +1,122 @@
+/* ==========================================================================
+   WooCommerce Pagination styles - begin
+   ========================================================================== */
+.edgtf-woo-pagination-holder {
+	@include edgtfRelativeHolderLayout();
+	margin: 0 0 92px;
+	border-top: 1px solid $default-border-color;
+	clear: both;
+
+	.edgtf-woo-pagination-inner {
+		position: relative;
+		display: table;
+		width: 100%;
+		padding: 13px 0 0;
+		text-align: right;
+	}
+}
+
+.woocommerce-pagination {
+	position: relative;
+	display: table-cell;
+	vertical-align: top;
+	width: 99%;
+	margin: 0;
+	padding: 0;
+
+	.page-numbers {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+
+		li {
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			margin: 0;
+
+			a,
+			span {
+				position: relative;
+				display: inline-block;
+				width: auto;
+				margin: 0 5px;
+				padding: 0;
+				vertical-align: middle;
+				text-decoration: none;
+				cursor: pointer;
+				white-space: nowrap;
+				color: $default-text-color;
+				@include edgtfTransition(color .2s ease-out);
+
+				&.current,
+				&:hover {
+					color: $default-heading-color;
+				}
+			}
+
+			a {
+
+				&.next,
+				&.prev {
+					font-size: 0px;
+					line-height: 1;
+					margin: 0 7px 0 0;
+
+					&:before {
+						position: relative;
+						top: 0;
+						display: block;
+						font-family: 'linea-arrows-10';
+						font-size: 17px;
+						line-height: inherit;
+						-webkit-font-smoothing: antialiased;
+						-moz-osx-font-smoothing: grayscale;
+					}
+				}
+
+				&.prev {
+
+					&:before {
+						content: "\e03f";
+					}
+				}
+
+				&.next {
+
+					&:before {
+						content: "\e04b";
+					}
+				}
+			}
+		}
+	}
+}
+
+.edgtf-woo-view-all-pagination {
+	position: relative;
+	display: table-cell;
+	vertical-align: top;
+	width: 1%;
+
+	a {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		white-space: nowrap;
+		padding: 0 0 0 2px;
+
+		&:before {
+			content: '|';
+			padding: 0 14px 0 0;
+			color: $default-heading-color;
+		}
+	}
+}
+
+/* ==========================================================================
+   WooCommerce Pagination styles - end
+   ========================================================================== */

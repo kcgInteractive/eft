@@ -1,0 +1,30 @@
+/* ==========================================================================
+   Image With Text shortcode style - begin
+   ========================================================================== */
+
+.edgtf-image-with-text-holder {
+    @include edgtfRelativeHolderLayout();
+	
+	.edgtf-iwt-image {
+		@include edgtfRelativeHolderLayout();
+		
+		a, img {
+			display: block;
+		}
+	}
+	
+	.edgtf-iwt-text-holder {
+		@include edgtfRelativeHolderLayout();
+	}
+	
+	.edgtf-iwt-title {
+		margin: 38px 0 0;
+	}
+	
+	.edgtf-iwt-text {
+		margin: 16px 0 0;
+	}
+}
+/* ==========================================================================
+   Image With Text shortcode style - end
+   ========================================================================== */

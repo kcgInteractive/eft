@@ -1,0 +1,132 @@
+/* ==========================================================================
+   Item Showcase shortcode responsive style - begin
+   ========================================================================== */
+
+@include ipad-landscape {
+
+	.edgtf-item-showcase-holder {
+		margin: 0 !important; /* important to override the inline style for larger devices */
+		
+		.edgtf-is-image {
+			position: absolute;
+			left: 0;
+			width: 40%;
+			height: 100%;
+			margin-top: 0 !important; //override inline margin if set by user
+			
+			&.edgtf-is-has-both-image {
+				
+				.edgtf-is-first-image {
+					position: relative;
+					top: 50%;
+					left: 0;
+					@include edgtfTransform(translateY(-50%));
+				}
+				
+				.edgtf-is-stack-image {
+					display: none;
+				}
+			}
+			
+			&.edgtf-appeared {
+				
+				&.edgtf-is-has-both-image {
+					
+					.edgtf-is-stack-image {
+						top: calc(50% + 50px);
+					}
+				}
+			}
+			
+			img {
+				position: relative;
+				top: 50%;
+				left: 0;
+				@include edgtfTransform(translateY(-50%));
+			}
+		}
+		
+		.edgtf-is-item-holder {
+			
+			&.edgtf-is-left-holder,
+			&.edgtf-is-right-holder {
+				float: right;
+				width: 60%;
+				padding: 0 0 0 40%;
+			}
+			
+			&.edgtf-is-left-holder {
+				margin: 20px 0 0;
+			}
+			
+			&.edgtf-is-right-holder {
+				margin: 36px 0 40px;
+			}
+		}
+		
+		.edgtf-is-item {
+			margin: 36px 0 0;
+			
+			&.edgtf-is-left {
+				text-align: left;
+				
+				.edgtf-is-content {
+					padding: 0 0 0 30px;
+				}
+				
+				img {
+					margin-left: 0;
+				}
+			}
+			
+			&.edgtf-is-right {
+				
+				.edgtf-is-content {
+					padding: 0 0 0 30px;
+				}
+			}
+			
+			&:not(.edgtf-appeared) {
+				@include edgtfTransform(translateX(-40px));
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 680px) {
+
+	.edgtf-item-showcase-holder {
+
+		.edgtf-is-image {
+			display: none;
+		}
+
+		.edgtf-is-item-holder {
+
+			&.edgtf-is-left-holder,
+			&.edgtf-is-right-holder {
+				float: none;
+				width: 100%;
+				padding: 0;
+			}
+		}
+
+		.edgtf-is-item {
+			opacity: 1;
+			-webkit-transform: translateX(0) translateY(0) !important;
+			-moz-transform: translateX(0) translateY(0) !important;
+			transform: translateX(0) translateY(0) !important;
+
+			&.edgtf-is-left,
+			&.edgtf-is-right {
+
+				.edgtf-is-content {
+					padding: 0;
+				}
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Item Showcase shortcode responsive style - end
+   ========================================================================== */

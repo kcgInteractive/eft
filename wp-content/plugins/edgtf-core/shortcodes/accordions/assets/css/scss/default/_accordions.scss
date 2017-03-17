@@ -1,0 +1,259 @@
+/* ==========================================================================
+   Accordions shortcode style - begin
+   ========================================================================== */
+
+.edgtf-accordion-holder {
+    @include edgtfRelativeHolderLayout();
+
+	&.edgtf-icon-position-right {
+
+		.edgtf-title-holder {
+			padding: 17px 30px 17px 10px;
+
+			.edgtf-accordion-mark {
+				left: auto;
+				right: 10px;
+			}
+		}
+
+		&.edgtf-ac-boxed {
+
+			.edgtf-title-holder {
+				padding: 13px 40px 13px 10px;
+
+				.edgtf-accordion-mark {
+					left: auto;
+				}
+			}
+		}
+	}
+
+	h6 {
+
+		&.edgtf-title-holder {
+			font-size: 16px;
+		}
+	}
+
+    .edgtf-title-holder {
+		position: relative;
+		display: block;
+        cursor: pointer;
+		padding: 17px 0 17px 30px;
+		margin: 0;
+		box-sizing: border-box;
+		@include edgtfTransform(translateZ(0px));
+        @include edgtfTransition(color .2s ease-out, background-color .2s ease-out);
+
+	    .edgtf-tab-title {
+		    display: block;
+			font-weight: 300;
+			line-height: inherit;
+	    }
+
+        .edgtf-accordion-mark {
+            position: absolute;
+            top: 50%;
+	        left: 0;
+            width: 22px;
+	        height: 22px;
+	        font-size: 15px;
+	        line-height: 22px;
+            text-align: center;
+            @include edgtfTransform(translateY(-50%) translateZ(0));
+
+	        span {
+		        position: absolute;
+		        display: block;
+		        width: 100%;
+		        height: 100%;
+		        font-size: inherit;
+		        line-height: inherit;
+		        @include edgtfTransition(opacity .2s ease-out);
+
+		        &:before {
+			        display: block;
+			        line-height: inherit;
+		        }
+
+		        &.edgtf-icon-minus {
+			        opacity: 0;
+		        }
+
+		        &.edgtf-icon-plus {
+			        opacity: 1;
+		        }
+	        }
+        }
+
+	    &.ui-state-active,
+	    &.ui-state-hover {
+
+		    .edgtf-accordion-mark {
+
+			    span {
+
+				    &.edgtf-icon-minus {
+					    opacity: 1;
+				    }
+
+				    &.edgtf-icon-plus {
+					    opacity: 0;
+				    }
+			    }
+		    }
+	    }
+    }
+
+    .edgtf-accordion-content {
+        margin: 0;
+
+	    p {
+		    margin: 0;
+	    }
+    }
+
+	&.edgtf-ac-boxed {
+
+		&.edgtf-white-skin {
+
+			.edgtf-title-holder {
+				background-color: #fff;
+			}
+		}
+
+		.edgtf-title-holder {
+			margin: 15px 0 0;
+			padding: 13px 0 13px 40px;
+			background-color: #f7f7f9;
+
+			&:first-child {
+				margin: 0;
+			}
+
+			.edgtf-accordion-mark {
+				left: 10px;
+			}
+
+			&.ui-state-active,
+			&.ui-state-hover {
+				color: #fff;
+				background-color: $first-main-color;
+			}
+		}
+
+		.edgtf-accordion-content {
+			padding: 21px 0 6px;
+		}
+	}
+	
+	&.edgtf-ac-standard {
+		border-bottom: 1px solid $default-border-color;
+		
+		.edgtf-title-holder {
+			border-top: 1px solid $default-border-color;
+			
+			&.ui-state-active,
+			&.ui-state-hover {
+				
+				.edgtf-accordion-mark {
+					background-color: $first-main-color;
+				}
+			}
+			
+			.edgtf-accordion-mark {
+				color: #fff;
+				background-color: #ccc;
+				border-radius: 100%;
+				@include edgtfTransition(color .2s ease-out, background-color .2s ease-out);
+				
+				.edgtf-icon-plus {
+					font-size: 17px;
+				}
+				
+				.edgtf-icon-minus {
+					font-size: 15px;
+				}
+			}
+		}
+		
+		.edgtf-accordion-content {
+			border-top: 1px solid transparent;
+			
+			&.ui-accordion-content-active {
+				border-color: $default-border-color;
+			}
+		}
+		
+		.edgtf-accordion-content {
+			padding: 21px 0 16px;
+		}
+	}
+
+	&.edgtf-ac-simple {
+		border-bottom: 1px solid $default-border-color;
+
+		.edgtf-title-holder {
+			border-top: 1px solid $default-border-color;
+
+			.edgtf-accordion-mark {
+				
+				.edgtf-icon-plus {
+					font-size: 25px;
+				}
+				
+				.edgtf-icon-minus {
+					font-size: 21px;
+				}
+			}
+		}
+
+		.edgtf-accordion-content {
+			border-top: 1px solid transparent;
+
+			&.ui-accordion-content-active {
+				border-color: $default-border-color;
+			}
+		}
+
+		.edgtf-accordion-content {
+			padding: 21px 0 16px;
+		}
+	}
+
+	&.edgtf-toggle {
+
+		.edgtf-title-holder {
+
+			&.ui-state-active,
+			&:hover {
+				color: $default-heading-color;
+				background-color: transparent;
+			}
+		}
+
+		&.edgtf-ac-boxed {
+			border-bottom: 1px solid $default-border-color;
+
+			.edgtf-title-holder {
+				border-top: 1px solid $default-border-color;
+
+				&:hover,
+				&.ui-state-active {
+					color: #fff;
+				}
+			}
+		}
+
+		&.edgtf-ac-simple {
+			border: 0;
+
+			.edgtf-title-holder {
+				border-top: 0;
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Accordions shortcode style - end
+   ========================================================================== */

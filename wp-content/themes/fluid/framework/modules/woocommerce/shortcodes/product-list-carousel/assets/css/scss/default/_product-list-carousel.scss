@@ -1,0 +1,455 @@
+/* ==========================================================================
+   Product List - Carousel shortcode styles - begin
+   ========================================================================== */
+
+.edgtf-plc-holder {
+    @include edgtfRelativeHolderLayout();
+
+    .edgtf-plc-outer {
+        @include edgtfRelativeHolderLayout();
+        visibility: hidden;
+    }
+
+    .edgtf-plc-item {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        width: 100%;
+        padding: 0;
+        z-index: 100;
+        overflow: hidden;
+        box-sizing: border-box;
+
+        &:hover {
+
+            .edgtf-plc-image-outer {
+
+                .edgtf-plc-text {
+                    opacity: 1;
+                }
+            }
+        }
+
+        .touch & {
+            cursor: pointer;
+        }
+
+        .edgtf-plc-image-outer {
+            @include edgtfRelativeHolderLayout();
+
+            .edgtf-plc-image {
+                @include edgtfRelativeHolderLayout();
+
+                img {
+                    display: block;
+                    width: 100%;
+                }
+
+                .edgtf-plc-onsale,
+                .edgtf-plc-out-of-stock {
+	                position: absolute;
+	                display: inline-block;
+	                vertical-align: middle;
+	                top: 20px;
+	                width: auto;
+	                padding: 0 18px;
+	                margin: 0;
+	                color: #fff;
+	                font-size: 10px;
+	                line-height: 26px;
+	                font-weight: 500;
+	                letter-spacing: 2px;
+	                background-color: $default-heading-color;
+	                text-align: center;
+	                border-radius: 15px;
+	                z-index: 100;
+	                box-sizing: border-box;
+	                @include edgtfTransform(translateZ(0));
+                }
+
+                .edgtf-plc-onsale {
+	                left: 20px;
+                }
+
+                .edgtf-plc-out-of-stock {
+	                right: 20px;
+                }
+            }
+
+            .edgtf-plc-text {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                padding: 10px;
+                opacity: 0;
+                background-color: rgba($default-heading-color, 0.4);
+                box-sizing: border-box;
+                @include edgtfTransition(opacity .2s ease-out, background-color .2s ease-out);
+            }
+
+            .edgtf-plc-text-outer {
+                position: relative;
+                display: table;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+            }
+
+            .edgtf-plc-text-inner {
+                position: relative;
+                display: table-cell;
+                width: 100%;
+                height: 100%;
+                vertical-align: middle;
+            }
+        }
+	
+	    .edgtf-plc-category {
+		    margin: 0 0 9px;
+		
+		    a {
+			    color: $default-text-color;
+			
+			    &:hover {
+				    color: $default-heading-color;
+			    }
+		    }
+	    }
+	    
+        .edgtf-plc-title {
+            margin: 0 0 4px;
+        }
+
+        .edgtf-plc-excerpt {
+            color: $default-heading-color;
+            line-height: 1.3em;
+            margin: 6px 0 0;
+        }
+
+        .edgtf-plc-rating-holder {
+            @include edgtfRelativeHolderLayout();
+            line-height: 1;
+            margin: 6px 0 0;
+        }
+
+        .edgtf-plc-rating {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            font-family: "ElegantIcons";
+            font-size: 12px;
+            line-height: 1;
+            letter-spacing: 2px;
+            color: $first-main-color;
+            overflow: hidden;
+            -webkit-font-smoothing: antialiased;
+
+            &:before {
+                content: "\e031\e031\e031\e031\e031";
+            }
+
+            span {
+                position: absolute;
+                top: 0;
+                left: 0;
+                overflow: hidden;
+
+                &:before {
+                    content: "\e033\e033\e033\e033\e033";
+                }
+            }
+        }
+
+        .edgtf-plc-price {
+	        display: block;
+	        margin: 18px 0 0;
+	        line-height: 1;
+	
+	        * {
+		        font-size: inherit;
+		        line-height: inherit;
+	        }
+	
+	        del {
+		        margin: 0 8px 0 0;
+	        }
+	
+	        ins {
+		        text-decoration: none;
+	        }
+        }
+	
+	    .button,
+	    .added_to_cart {
+		    position: relative;
+		    display: inline-block;
+		    width: auto;
+		    height: 48px;
+		    line-height: 48px;
+		    padding: 0 37px;
+		    margin: 0;
+		    font-size: 11px;
+		    letter-spacing: 2px;
+		    font-weight: 700;
+		    border: 0;
+		    border-radius: 0;
+		    outline: none;
+		    white-space: nowrap;
+		    cursor: pointer;
+		    vertical-align: middle;
+		    text-transform: uppercase;
+		    box-sizing: border-box;
+		    @include edgtfTransition(color .2s ease-in-out, background-color .2s ease-in-out);
+	    }
+	
+	    .button.added {
+		    display: none;
+	    }
+	
+	    .edgtf-plc-add-to-cart {
+		    margin: 28px 0 0;
+		
+		    &.edgtf-default-skin {
+			
+			    .button,
+			    .added_to_cart {
+				    color: #fff;
+				    background-color: $default-heading-color;
+				
+				    &:hover {
+					    color: #fff;
+					    background-color: $first-main-color;
+				    }
+			    }
+		    }
+		
+		    &.edgtf-light-skin {
+			
+			    .button,
+			    .added_to_cart {
+				    color: $default-heading-color;
+				    background-color: #fff;
+				
+				    &:hover {
+					    color: #fff;
+					    background-color: $first-main-color;
+				    }
+			    }
+		    }
+		
+		    &.edgtf-dark-skin {
+			
+			    .button,
+			    .added_to_cart {
+				    color: #fff;
+				    background-color: $default-heading-color;
+				
+				    &:hover {
+					    color: #fff;
+					    background-color: $first-main-color;
+				    }
+			    }
+		    }
+	    }
+
+        .edgtf-plc-link {
+            @include edgtfAbsoluteHolderLayout();
+        }
+    }
+
+    &.edgtf-standard-layout {
+
+        .edgtf-plc-item {
+    
+            .edgtf-plc-title,
+            .edgtf-plc-excerpt,
+            .edgtf-plc-rating,
+            .edgtf-plc-rating span,
+            .edgtf-plc-price {
+                color: #fff;
+            }
+	        
+	        .edgtf-plc-category a {
+                color: #fff;
+        
+                &:hover {
+	                color: rgba(#fff, .3);
+                }
+            }
+        }
+    }
+
+    &.edgtf-simple-layout {
+        
+        .edgtf-plc-image-outer {
+            display: table-cell;
+            vertical-align: middle;
+            width: 50%;
+            padding: 0 15px 0 0;
+        }
+
+        .edgtf-plc-text-wrapper {
+            position: relative;
+            display: table-cell;
+            vertical-align: middle;
+            width: 50%;
+            padding: 0 0 0 15px;
+        }
+
+        .edgtf-plc-text,
+        .edgtf-plc-text-outer,
+        .edgtf-plc-text-inner {
+            @include edgtfRelativeHolderLayout();
+            -webkit-transform: translateZ(0);
+        }
+    }
+
+    .owl-nav {
+
+        .owl-prev,
+        .owl-next {
+            position: absolute;
+            top: 50%;
+            z-index: 3;
+            @include edgtfTransform(translateY(-50%));
+
+            &:hover {
+	
+	            .edgtf-prev-icon,
+	            .edgtf-next-icon {
+		            color: $first-main-color;
+	            }
+            }
+        }
+
+        .owl-prev {
+            left: 30px;
+        }
+
+        .owl-next {
+            right: 30px;
+        }
+
+        .edgtf-prev-icon,
+        .edgtf-next-icon {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            color: $default-heading-color;
+            line-height: 1;
+	        @include edgtfTransition(color .2s ease-in-out);
+
+            .edgtf-icon-arrow {
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+	            font-size: 50px;
+	            line-height: inherit;
+	
+	            &:before {
+		            display: block;
+	            }
+            }
+        }
+    }
+	
+	&.edgtf-plc-nav-light-skin {
+		
+		.owl-nav {
+			
+			.owl-prev,
+			.owl-next {
+				
+				&:hover {
+					
+					.edgtf-prev-icon,
+					.edgtf-next-icon {
+						color: $header-light-hover-color;
+					}
+				}
+			}
+			
+			.edgtf-prev-icon,
+			.edgtf-next-icon {
+				color: $header-light-color;
+			}
+		}
+	}
+
+    &.edgtf-plc-pag-enabled .owl-nav {
+        
+        .owl-prev,
+        .owl-next {
+            $pos: calc(-50% - 19px); // 19 is is half height of pagination control
+            @include edgtfTransform(translateY($pos));
+        }
+    }
+	
+	.owl-dots {
+		text-align: center;
+		margin: 19px 0 0;
+		
+		.owl-dot {
+			display: inline-block;
+			vertical-align: middle;
+			
+			span {
+				display: inline-block;
+				vertical-align: middle;
+				width: 8px;
+				height: 8px;
+				margin: 0 6px;
+				border-radius: 3em;
+				background-color: rgba($default-heading-color, .3);
+				box-sizing: border-box;
+				@include edgtfTransition(background-color .2s ease-out, width .2s ease-out, height .2s ease-out);
+			}
+			
+			&.active {
+				
+				span {
+					width: 10px;
+					height: 10px;
+					background-color: $default-heading-color;
+				}
+			}
+		}
+	}
+	
+	&.edgtf-plc-pag-inside-slider {
+		
+		.owl-dots {
+			position: absolute;
+			left: 0;
+			bottom: 10px;
+			margin: 0;
+		}
+	}
+	
+	&.edgtf-plc-pag-light-skin {
+		
+		.owl-dots {
+			
+			.owl-dot {
+
+				span {
+					background-color: $header-light-hover-color;
+				}
+
+				&:hover,
+				&.active {
+
+					span {
+						background-color: $header-light-color;
+					}
+				}
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Product List - Carousel shortcode styles - end
+   ========================================================================== */

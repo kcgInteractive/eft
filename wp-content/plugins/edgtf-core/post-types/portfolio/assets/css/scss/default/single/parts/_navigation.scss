@@ -1,0 +1,102 @@
+/* ==========================================================================
+   Portfolio Single navigation style - begin
+   ========================================================================== */
+
+.edgtf-ps-navigation {
+	position: relative;
+	display: table;
+	width: 100%;
+	vertical-align: middle;
+	padding: 0;
+	margin: 60px 0 85px;
+	clear: both;
+    box-sizing: border-box;
+
+    .edgtf-ps-full-width-custom-layout & {
+        padding: 0 40px;
+    }
+	
+	.edgtf-ps-back-btn {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		display: inline-block;
+		vertical-align: middle;
+		@include edgtfTransform(translateX(-50%) translateY(-50%));
+		
+		a {
+			position: relative;
+			display: inline-block;
+			margin: 0;
+			padding: 0;
+			vertical-align: middle;
+			cursor: pointer;
+			font-size: 30px;
+			line-height: 1;
+			
+			span {
+				display: block;
+				line-height: inherit;
+				
+				&:before,
+				&:after {
+					display: block;
+					line-height: 14px;
+				}
+			}
+		}
+	}
+	
+	.edgtf-ps-prev,
+	.edgtf-ps-next {
+		position: relative;
+		display: table-cell;
+		vertical-align: middle;
+		width: 49%;
+		padding: 0;
+		box-sizing: border-box;
+		
+		a {
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 40px;
+			line-height: 50px;
+			
+			.edgtf-ps-nav-mark {
+				position: relative;
+				display: inline-block;
+				vertical-align: top;
+				
+				&:before {
+					display: block;
+					line-height: inherit;
+				}
+			}
+		}
+	}
+	
+	.edgtf-ps-prev {
+		
+		a {
+			
+			.edgtf-ps-nav-mark {
+				left: 0;
+			}
+		}
+	}
+	
+	.edgtf-ps-next {
+		text-align: right;
+		
+		a {
+			
+			.edgtf-ps-nav-mark {
+				right: 0;
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Portfolio Single navigation style - end
+   ========================================================================== */

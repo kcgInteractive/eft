@@ -1,0 +1,180 @@
+/* ==========================================================================
+   Image Gallery shortcode style - begin
+   ========================================================================== */
+
+.edgtf-image-gallery {
+    @include edgtfRelativeHolderLayout();
+    
+	.edgtf-ig-grid {
+		
+		.edgtf-ig-image {
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+			float: left;
+			box-sizing: border-box;
+			
+			.touch & {
+				cursor: pointer;
+			}
+			
+			&:hover {
+				
+				img {
+					@include edgtfTransform(translate3d(0,-10px,0));
+				}
+				
+				.edgtf-ig-image-mark {
+					$new_pos: calc(-50% - 10px);
+					@include edgtfTransform(translateY($new_pos));
+				}
+			}
+			
+			a, img {
+				position: relative;
+				display: block;
+			}
+
+			img {
+				@include edgtfTransition(all .3s cubic-bezier(0.46, 0.01, 0.25, 1));
+				will-change: transform;
+			}
+			
+			.edgtf-ig-image-mark {
+				position: absolute;
+				top: 0;
+				width: 50px;
+				height: 50px;
+				line-height: 50px;
+				font-size: 12px;
+				font-weight: 500;
+				text-align: center;
+				letter-spacing: 0.5px;
+				color: #fff;
+				background-color: $first-main-color;
+				border-radius: 100%;
+				z-index: 1;
+				@include edgtfTransform(translateY(-50%));
+				@include edgtfTransition(all .3s cubic-bezier(0.46, 0.01, 0.25, 1));
+			}
+
+			.edgtf-ig-image-title-holder {
+				margin: 35px 0 0;
+
+				.edgtf-ig-image-title-prefix {
+					color: #ccc;
+					font-size: 30px;
+					margin: 0 6px 0 0;
+				}
+				
+				.edgtf-ig-image-title {
+					color: #999;
+				}
+			}
+		}
+		
+		$gallery_space_label: ('no', 'tiny', 'small', 'normal', 'large');
+		$gallery_space_width: (0, 5, 10, 15, 30);
+		
+		@for $i from 0 to length($gallery_space_label) {
+			&.edgtf-ig-#{nth($gallery_space_label,$i+1)}-space {
+				$column_width: nth($gallery_space_width,$i+1);
+				$column_width_margin: $column_width * 2;
+				
+				@if($column_width == 0) {
+					margin: 0;
+				} @else {
+					margin: 0 -#{$column_width}px;
+				}
+				
+				.edgtf-ig-image {
+					padding: 0 #{$column_width}px;
+					margin: 0 0 #{$column_width_margin}px;
+					
+					.edgtf-ig-image-mark {
+						right: #{30 + $column_width}px;
+					}
+				}
+			}
+		}
+		
+		$gallery_columns: ('2', '3', '4', '5', '6');
+		@for $i from 0 to length($gallery_columns) {
+			&.edgtf-ig-columns-#{nth($gallery_columns, $i+1)} {
+				$column_width: 100%/($i+2);
+				
+				.edgtf-ig-image {
+					width: $column_width;
+					
+					@media only screen and (min-width: $ipad-landscape-plus-pixel) {
+						
+						&:nth-child(#{$i+2}n+1) {
+							clear: both;
+						}
+					}
+				}
+			}
+		}
+		
+		&.edgtf-ig-grayscale {
+			
+			.edgtf-ig-image {
+				
+				img {
+					filter: url('img/desaturate.svg#grayscale');
+					-webkit-filter: grayscale(100%);
+					-moz-filter: grayscale(100%);
+					filter: gray;
+					filter: grayscale(100%);
+				}
+				
+				.touch & {
+					cursor: pointer;
+				}
+				
+				&:hover {
+					
+					img {
+						-webkit-filter: grayscale(0);
+						filter: none;
+					}
+				}
+			}
+		}
+	}
+	
+	.edgtf-ig-slider {
+		@include edgtfRelativeHolderLayout();
+		
+		.owl-item {
+			@include edgtfTransform(translateZ(0));
+			
+			a {
+				position: relative;
+				display: block;
+				
+				img {
+					display: block;
+				}
+				
+				&:after {
+					@include edgtfAbsoluteHolderLayout();
+					content: '';
+					background-color: rgba($default-heading-color, 0.4);
+					opacity: 0;
+					@include edgtfTransition(opacity .2s ease-in-out);
+				}
+				
+				&:hover {
+					
+					&:after {
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Image Gallery shortcode style - end
+   ========================================================================== */

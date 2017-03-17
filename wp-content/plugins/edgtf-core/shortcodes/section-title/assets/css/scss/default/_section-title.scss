@@ -1,0 +1,27 @@
+/* ==========================================================================
+   Section Title shortcode styles - begin
+   ========================================================================== */
+
+.edgtf-section-title-holder {
+    @include edgtfRelativeHolderLayout();
+	box-sizing: border-box;
+	
+	@include phone-landscape {
+		padding: 0 !important; // it can be set inline in shortcode options
+	}
+	
+    .edgtf-st-title {
+	    display: block;
+        margin: 0;
+    }
+    
+    .edgtf-st-text {
+	    display: block;
+        margin: 14px 0 0;
+    }
+}
+/* ==========================================================================
+   Section Title shortcode styles - end
+   ========================================================================== */
+
+

@@ -1,0 +1,177 @@
+/* ==========================================================================
+   Icon With Text shortcode style - begin
+   ========================================================================== */
+
+.edgtf-iwt {
+	@include edgtfRelativeHolderLayout();
+
+	&.edgtf-iwt-left {
+
+		.edgtf-iwt-icon,
+		.edgtf-iwt-content {
+			text-align: left;
+		}
+	}
+
+	&.edgtf-iwt-center {
+
+		.edgtf-iwt-icon,
+		.edgtf-iwt-content {
+			text-align: center;
+		}
+	}
+
+	&.edgtf-iwt-left-no-title {
+
+		&.edgtf-iwt-icon-left {
+
+			.edgtf-iwt-icon,
+			.edgtf-iwt-content {
+				display: table-cell;
+				vertical-align: middle;
+			}
+
+			.edgtf-iwt-text {
+				margin: 2px 0 0;
+			}
+		}
+	}
+	
+	.edgtf-iwt-icon {
+		
+		a {
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+		}
+		
+		.edgtf-icon-shortcode {
+			line-height: 1;
+			
+			&.edgtf-circle,
+			&.edgtf-square {
+				line-height: 2;
+			}
+		}
+	}
+	
+	.edgtf-iwt-title {
+		margin: 0;
+
+		a {
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+		}
+	}
+	
+	p.edgtf-iwt-title {
+		
+		a {
+			@include edgtfTypographyLayout();
+		}
+	}
+	
+	.edgtf-iwt-title-text,
+	.edgtf-iwt-title-description {
+		display: block;
+	}
+	
+	.edgtf-iwt-text {
+		margin: 18px 0 0;
+	}
+	
+	&.edgtf-iwt-icon-left {
+		width: auto;
+		
+		.edgtf-iwt-icon,
+		.edgtf-iwt-content {
+			display: table-cell;
+			vertical-align: top;
+		}
+		
+		.edgtf-iwt-icon {
+			position: relative;
+			top: 1px;
+			
+			img {
+				max-width: none;
+			}
+		}
+		
+		.edgtf-iwt-content {
+			padding: 0 0 0 15px;
+		}
+	}
+	
+	&.edgtf-iwt-icon-left-from-title {
+		
+		.edgtf-iwt-icon,
+		.edgtf-iwt-title-text {
+			position: relative;
+			display: table-cell;
+			vertical-align: middle;
+		}
+		
+		.edgtf-iwt-icon {
+			
+			.edgtf-icon-element {
+				@include edgtfTransition(none);
+			}
+			
+			img {
+				max-width: none;
+			}
+		}
+		
+		.edgtf-iwt-title-text {
+			padding: 0 0 0 17px;
+		}
+	}
+	
+	&.edgtf-iwt-icon-top {
+		text-align: center;
+
+		&.edgtf-iwt-underline {
+			.edgtf-iwt-line {
+				position: absolute;
+				top: 50%;
+				left: calc(50% - 31px);
+				width: 62px;
+				height: 1px;
+				z-index: -1;
+				background-color: $default-heading-color;
+				@include edgtfTransform(scale(0));
+				opacity:0;
+				@include edgtfTransition(all .6s cubic-bezier(0.26, 0.9, 0.63, 1));
+			}
+
+			.edgtf-iwt-icon,
+			.edgtf-iwt-content {
+				@include edgtfTransition(all .45s cubic-bezier(0.65, 0, 0, 1.83));
+			}
+
+			&:hover {
+				.edgtf-iwt-line {
+					opacity:1;
+					@include edgtfTransform(scale(1));
+				}
+
+				.edgtf-iwt-icon {
+					@include edgtfTransform(translateY(-5px));
+				}
+
+				.edgtf-iwt-content {
+					@include edgtfTransform(translateY(15px));
+				}
+			}
+		}
+		
+		.edgtf-iwt-content {
+			padding: 23px 0 0;
+		}
+	}
+}
+/* ==========================================================================
+   Icon With Text shortcode style - end
+   ========================================================================== */

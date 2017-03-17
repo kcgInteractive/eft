@@ -1,0 +1,215 @@
+/* ==========================================================================
+   Portfolio Slider shortcode style - begin
+   ========================================================================== */
+
+.edgtf-portfolio-slider-holder {
+    @include edgtfRelativeHolderLayout();
+	opacity: 0;
+
+	.edgtf-pl-inner {
+		margin: 0 !important;
+	}
+	
+	article {
+		width: auto !important;
+		padding: 0 !important;
+		margin: 0 !important;
+		float: none !important;
+	}
+	
+	.owl-nav {
+		
+		.owl-prev,
+		.owl-next {
+			position: absolute;
+			top: 50%;
+			z-index: 3;
+			@include edgtfTransform(translateY(-50%));
+			
+			&:hover {
+				
+				.edgtf-prev-icon,
+				.edgtf-next-icon {
+					color: $first-main-color;
+				}
+			}
+		}
+		
+		.owl-prev {
+			left: 20px;
+		}
+		
+		.owl-next {
+			right: 20px;
+		}
+		
+		.edgtf-prev-icon,
+		.edgtf-next-icon {
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+			color: $default-heading-color;
+			line-height: 1;
+			@include edgtfTransition(color .2s ease-out);
+			
+			.edgtf-icon-arrow {
+				position: relative;
+				display: inline-block;
+				vertical-align: middle;
+				font-size: 46px;
+				line-height: inherit;
+				
+				&:before {
+					display: block;
+					line-height: inherit;
+				}
+			}
+		}
+	}
+	
+	.owl-dots {
+		position: absolute;
+		left: 0;
+		bottom: 20px;
+		width: 100%;
+		text-align: center;
+		
+		.owl-dot {
+			display: inline-block;
+			vertical-align: middle;
+			
+			span {
+				display: inline-block;
+				vertical-align: middle;
+				width: 12px;
+				height: 12px;
+				margin: 0 6px;
+				border-radius: 3em;
+				background-color: transparent;
+				border: 2px solid rgba($default-heading-color, .5);
+				@include edgtfTransition(background-color .2s ease-out, border .2s ease-out);
+				box-sizing: border-box;
+			}
+			
+			&:hover,
+			&.active {
+				
+				span {
+					background-color: $default-heading-color;
+					border-color: $default-heading-color;
+				}
+			}
+		}
+	}
+
+	.edgtf-portfolio-list-holder {
+
+		&.edgtf-nav-light-skin {
+
+			.owl-nav {
+
+				.owl-prev,
+				.owl-next {
+
+					&:hover {
+
+						.edgtf-prev-icon,
+						.edgtf-next-icon {
+							color: $header-light-hover-color;
+						}
+					}
+				}
+
+				.edgtf-prev-icon,
+				.edgtf-next-icon {
+					color: $header-light-color;
+				}
+			}
+		}
+
+		&.edgtf-nav-dark-skin {
+
+			.owl-nav {
+
+				.owl-prev,
+				.owl-next {
+
+					&:hover {
+
+						.edgtf-prev-icon,
+						.edgtf-next-icon {
+							color: $header-dark-hover-color;
+						}
+					}
+				}
+
+				.edgtf-prev-icon,
+				.edgtf-next-icon {
+					color: $header-dark-color;
+				}
+			}
+		}
+
+		&.edgtf-pag-light-skin {
+
+			.owl-dots {
+
+				.owl-dot {
+
+					span {
+						background-color: rgba($header-light-color, .2);
+					}
+
+					&.active,
+					&:hover {
+
+						span {
+							background-color: $header-light-hover-color;
+						}
+					}
+				}
+			}
+		}
+
+		&.edgtf-pag-dark-skin {
+
+			.owl-dots {
+
+				.owl-dot {
+
+					span {
+						background-color: rgba($header-dark-color, .2);
+					}
+
+					&.active,
+					&:hover {
+
+						span {
+							background-color: $header-dark-hover-color;
+						}
+					}
+				}
+			}
+		}
+
+		&.edgtf-pag-bellow-slider {
+
+			.owl-nav {
+
+				.owl-prev,
+				.owl-next {
+					margin: -19px 0 0;
+				}
+			}
+
+			.owl-dots {
+				position: relative;
+				bottom: auto;
+				margin: 16px 0 0;
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Portfolio Slider shortcode style - end
+   ========================================================================== */

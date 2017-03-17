@@ -1,0 +1,51 @@
+/* ==========================================================================
+   Stacked Images responsive style - begin
+   ========================================================================== */
+
+@include ipad-landscape {
+	
+	.edgtf-stacked-images-holder {
+		margin: 0 0 40px 0;
+		
+		.edgtf-si-images {
+			margin: 0 60px 60px 0;
+			
+			&.edgtf-appeared {
+				
+				.edgtf-si-stack-image {
+					top: 60px;
+				}
+			}
+			
+			.edgtf-si-stack-image {
+				top: 130px;
+				left: 60px;
+			}
+		}
+	}
+}
+
+@include phone-landscape {
+	
+	.edgtf-stacked-images-holder {
+		
+		.edgtf-si-images {
+			margin: 0 40px 40px 0;
+			
+			&.edgtf-appeared {
+				
+				.edgtf-si-stack-image {
+					top: 40px;
+				}
+			}
+			
+			.edgtf-si-stack-image {
+				top: 100px;
+				left: 40px;
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Stacked Images responsive style - end
+   ========================================================================== */

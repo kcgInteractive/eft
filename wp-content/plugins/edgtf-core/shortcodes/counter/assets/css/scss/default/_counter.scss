@@ -1,0 +1,91 @@
+/* ==========================================================================
+   Counter shortcode style - begin
+   ========================================================================== */
+
+.edgtf-counter-holder {
+    @include edgtfRelativeHolderLayout();
+    opacity: 0;
+    @include edgtfTransition(opacity 0.2s ease-in);
+	
+	@include phone-landscape {
+		border: 0 !important;
+	}
+
+	&.edgtf-counter-title-left {
+
+		.edgtf-counter-inner {
+
+			.edgtf-counter,
+			.edgtf-counter-title {
+				display: inline-block;
+			}
+
+			.edgtf-counter-title {
+				font-size: 14px;
+				font-weight: 300;
+				margin: 0 0 5px 5px;
+				vertical-align: bottom;
+			}
+		}
+	}
+	
+	&.edgtf-counter-has-icon {
+		text-align: center;
+
+		.edgtf-counter-inner {
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+
+			img,
+			.edgtf-icon-shortcode {
+				display: block;
+			}
+
+			.edgtf-icon-shortcode {
+				line-height: 1;
+				text-align: center;
+			}
+
+			.edgtf-counter {
+				display: block;
+				margin: 25px 0 17px 0;
+			}
+		}
+
+		&.edgtf-counter-title-left {
+
+			.edgtf-counter {
+				margin: 25px 0 0;
+			}
+		}
+	}
+	
+	.edgtf-counter-inner {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+
+		.edgtf-counter {
+			height: 1em;
+			display: inline-block !important;
+			vertical-align: middle;
+			color: $default-heading-color;
+			font-size: 48px;
+			line-height: 1em;
+			font-weight: 300;
+			overflow: hidden;
+		}
+
+		.edgtf-counter-title {
+			margin: 5px 0 0;
+		}
+
+		.edgtf-counter-text {
+			margin: 14px 0 0;
+		}
+	}
+}
+/* ==========================================================================
+   Counter shortcode style - end
+   ========================================================================== */

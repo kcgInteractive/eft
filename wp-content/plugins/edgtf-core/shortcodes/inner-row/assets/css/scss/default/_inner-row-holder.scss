@@ -1,0 +1,37 @@
+/* ==========================================================================
+   Inner Row Holder shortcode style - begin
+   ========================================================================== */
+
+.edgtf-inner-row-holder {
+	@include edgtfRelativeHolderLayout();
+	
+	&.edgtf-ir-alignment-left {
+		text-align: left;
+	}
+	
+	&.edgtf-ir-alignment-center {
+		text-align: center;
+	}
+	
+	&.edgtf-ir-alignment-right {
+		text-align: right;
+	}
+	
+	.edgtf-irh-column {
+		
+		&.edgtf-ir-col-alignment-left {
+			text-align: left;
+		}
+		
+		&.edgtf-ir-col-alignment-center {
+			text-align: center;
+		}
+		
+		&.edgtf-ir-col-alignment-right {
+			text-align: right;
+		}
+	}
+}
+/* ==========================================================================
+   Inner Row Holder shortcode style - end
+   ========================================================================== */

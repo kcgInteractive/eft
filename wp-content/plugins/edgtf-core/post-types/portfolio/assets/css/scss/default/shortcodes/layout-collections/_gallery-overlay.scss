@@ -1,0 +1,63 @@
+/* ==========================================================================
+   Portfolio Item Layout - Gallery Overlay style - begin
+   ========================================================================== */
+
+.edgtf-portfolio-list-holder {
+	
+	&.edgtf-pl-gallery-overlay {
+		
+		article {
+			
+			.edgtf-pli-text {
+				opacity: 0;
+				@include edgtfTransform(translate3d(0,30px,0));
+				@include edgtfTransition(all .3s);
+
+				.edgtf-pli-title,
+				.edgtf-pli-excerpt {
+					color: #fff;
+				}
+				
+				.edgtf-pli-category-holder {
+					
+					a {
+						color: #fff;
+						
+						&:hover {
+							color: $first-main-color;
+						}
+					}
+				}
+			}
+			
+			&:hover {
+				.edgtf-pli-text {
+					opacity: 1;
+					@include edgtfTransform(translate3d(0,0,0));
+				}
+				
+				.edgtf-pli-text-holder {
+					opacity: 1;
+				}
+			}
+		}
+		
+		.edgtf-pli-text-holder {
+			position: absolute;
+			display: block;
+			width: 100%;
+			top: 0;
+			left: 0;
+			height: 100%;
+			padding: 20px;
+			background-color: rgba($default-heading-color, 0.4);
+			opacity: 0;
+			text-align: center;
+			@include edgtfTransition(opacity .5s cubic-bezier(0.1, 0.48, 0.12, 0.97));
+			box-sizing: border-box;
+		}
+	}
+}
+/* ==========================================================================
+   Portfolio Item Layout - Gallery Overlay style - end
+   ========================================================================== */

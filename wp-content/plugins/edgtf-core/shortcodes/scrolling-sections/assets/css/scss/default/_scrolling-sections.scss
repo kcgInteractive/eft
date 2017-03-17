@@ -1,0 +1,63 @@
+/* ==========================================================================
+   Scrolling Sections shortcode style - begin
+   ========================================================================== */
+
+.edgtf-scrolling-sections-holder {
+	@include edgtfRelativeHolderLayout();
+	
+	.edgtf-ss-background {
+		@include edgtfAbsoluteHolderLayout();
+		background-position: center 0;
+		background-repeat: no-repeat;
+	}
+
+	.edgtf-ss-item {
+		@include edgtfRelativeHolderLayout();
+		min-height: 100vh;
+		overflow: hidden;
+		
+		&.edgtf-item-in-view {
+			
+			&.edgtf-active-item {
+				
+				.edgtf-ss-item-watermark {
+					opacity: 1;
+					z-index: 2;
+					@include edgtfTransform(scale(1));
+					@include edgtfTransition(opacity .6s cubic-bezier(.15,.7,.54,.99));
+				}
+				
+				.edgtf-ss-item-content {
+					opacity: 1;
+				}
+			}
+		}
+	}
+
+	.edgtf-ss-item-content {
+		@include edgtfRelativeHolderLayout();
+		opacity: 0;
+		z-index: 3;
+		box-sizing: border-box;
+		@include edgtfTransition(opacity .4s cubic-bezier(0,0,0,1));
+	}
+	
+	.edgtf-ss-item-watermark {
+		position: fixed;
+		top: 10%;
+		left: 0;
+		width: 100%;
+		height: 80%;
+		display: inline-block;
+		vertical-align: middle;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		opacity: 0;
+		z-index: 1;
+		@include edgtfTransform(scale(0));
+	}
+}
+/* ==========================================================================
+   Scrolling Sections shortcode style - end
+   ========================================================================== */

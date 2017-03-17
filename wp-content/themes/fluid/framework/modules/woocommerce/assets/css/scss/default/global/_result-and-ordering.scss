@@ -1,0 +1,30 @@
+/* ==========================================================================
+   WooCommerce Result and Ordering styles - begin
+   ========================================================================== */
+.edgtf-woocommerce-page {
+
+    .woocommerce-result-count,
+    .woocommerce-ordering {
+        display: inline;
+        width: 50%;
+        margin: 0 0 19px;
+        float: left;
+    }
+
+    .woocommerce-result-count {
+        line-height: 38px;
+    }
+
+    .woocommerce-ordering {
+
+        .orderby {
+            float: right;
+            width: auto;
+            min-width: 190px;
+            margin: 0;
+        }
+    }
+}
+/* ==========================================================================
+   WooCommerce Result and Ordering styles - end
+   ========================================================================== */

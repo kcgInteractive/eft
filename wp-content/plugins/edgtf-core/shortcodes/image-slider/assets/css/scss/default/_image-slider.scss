@@ -1,0 +1,174 @@
+/* ==========================================================================
+   Image slider shortcode style - begin
+   ========================================================================== */
+
+.edgtf-image-slider-wrapper {
+    @include edgtfRelativeHolderLayout();
+
+	.edgtf-image-slider {
+		@include edgtfRelativeHolderLayout();
+		visibility: hidden;
+		
+		.owl-item {
+			@include edgtfTransform(translateZ(0));
+			-webkit-transition: -webkit-transform .4s ease;
+			-moz-transition: -moz-transform .4s ease;
+			transition: transform .4s ease;
+
+			&:not(.center) {
+				@include edgtfTransform(translateZ(0) translateY(7%) scale(0.86));
+				
+				&:hover {
+					@include edgtfTransform(translateZ(0) translateY(6%) scale(.88));
+				}
+			}
+
+			&.center {
+				@include edgtfTransform(translateZ(0) translateY(0) scale(1));
+			}
+			
+			a {
+				position: relative;
+				display: block;
+				
+				img {
+					display: block;
+					box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.05);
+				}
+			}
+		}
+
+		.owl-stage-outer {
+			z-index: 1;
+		}
+
+		&.edgtf-slider-has-both-nav {
+
+			.owl-nav {
+
+				.owl-prev,
+				.owl-next {
+					$pos: calc(-50% - 19px); // 19 is is half height of pagination control
+					@include edgtfTransform(translateY($pos));
+				}
+			}
+		}
+
+		.owl-nav {
+
+			.owl-prev,
+			.owl-next {
+				position: absolute;
+				top: 50%;
+				z-index: 3;
+				@include edgtfTransform(translateY(-50%));
+
+				&:hover {
+
+					.edgtf-prev-icon,
+					.edgtf-next-icon {
+						color: $first-main-color;
+					}
+				}
+			}
+
+			.owl-prev {
+				left: 27%;
+				
+				@include laptop-landscape-large {
+					left: 18%;
+				}
+				
+				@include laptop-landscape-medium {
+					left: 15%;
+				}
+				
+				@include ipad-landscape {
+					left: 30px;
+				}
+			}
+
+			.owl-next {
+				right: 27%;
+				
+				@include laptop-landscape-large {
+					right: 18%;
+				}
+				
+				@include laptop-landscape-medium {
+					right: 15%;
+				}
+				
+				@include ipad-landscape {
+					right: 30px;
+				}
+			}
+
+			.edgtf-prev-icon,
+			.edgtf-next-icon {
+				position: relative;
+				display: inline-block;
+				vertical-align: middle;
+				color: $default-heading-color;
+				line-height: 1;
+				@include edgtfTransition(color .2s ease-out);
+				
+				span {
+					position: relative;
+					display: inline-block;
+					vertical-align: top;
+					font-size: 40px;
+					line-height: inherit;
+					
+					&:before {
+						display: block;
+						line-height: inherit;
+					}
+				}
+			}
+		}
+
+		.owl-dots {
+			text-align: center;
+			margin: 16px 0 0;
+
+			.owl-dot {
+				display: inline-block;
+				vertical-align: middle;
+
+				span {
+					display: inline-block;
+					vertical-align: middle;
+					width: 12px;
+					height: 12px;
+					margin: 0 6px;
+					border-radius: 3em;
+					background-color: transparent;
+					border: 2px solid rgba($default-heading-color, .5);
+					@include edgtfTransition(background-color .2s ease-out, border .2s ease-out);
+					box-sizing: border-box;
+				}
+
+				&:hover,
+				&.active {
+
+					span {
+						background-color: $default-heading-color;
+						border-color: $default-heading-color;
+					}
+				}
+			}
+		}
+
+		.owl-carousel .owl-item {
+			text-align: center;
+
+			img {
+				-webkit-transform: translateZ(0); //chrome text cut off fix
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Image slider shortcode style - end
+   ========================================================================== */

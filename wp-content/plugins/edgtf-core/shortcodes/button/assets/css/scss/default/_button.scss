@@ -1,0 +1,124 @@
+/* ==========================================================================
+   Button shortcode style - begin
+   ========================================================================== */
+
+.edgtf-btn {
+    @include edgtfButtonDefaultStyle();
+    @include edgtfButtonMediumParams();
+
+    &.edgtf-btn-simple {
+        padding: 0 !important;
+        color: $first-main-color;
+        background-color: transparent;
+        border: 0;
+        vertical-align: middle;
+
+        .edgtf-btn-text {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        &:not(.edgtf-btn-custom-hover-color):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            color: $default-heading-color !important;
+        }
+
+        &:not(.edgtf-btn-custom-hover-bg):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            background-color: transparent !important;
+        }
+
+        &:not(.edgtf-btn-custom-border-hover):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            border-color: transparent !important;
+        }
+    }
+
+    &.edgtf-btn-solid {
+        @include edgtfButtonSolidColor();
+
+        &:not(.edgtf-btn-custom-hover-color):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            color: #fff !important;
+        }
+
+        &:not(.edgtf-btn-custom-hover-bg):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            background-color: $default-heading-color !important;
+        }
+
+        &:not(.edgtf-btn-custom-border-hover):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            border-color: $default-heading-color !important;
+        }
+    }
+
+    &.edgtf-btn-outline {
+	    @include edgtfButtonOutlineColor();
+
+        &:not(.edgtf-btn-custom-hover-color):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            color: #fff !important;
+        }
+
+        &:not(.edgtf-btn-custom-hover-bg):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            background-color: $first-main-color !important;
+        }
+
+        &:not(.edgtf-btn-custom-border-hover):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            border-color: $first-main-color !important;
+        }
+    }
+
+    &.edgtf-btn-small {
+        @include edgtfButtonSmallParams();
+    }
+
+    &.edgtf-btn-medium {
+        //same as default
+    }
+
+    &.edgtf-btn-large {
+        @include edgtfButtonLargeParams();
+    }
+
+    &.edgtf-btn-huge {
+        @include edgtfButtonHugeParams();
+    }
+
+    &.edgtf-btn-icon {
+
+        > i,
+        > span:not(.edgtf-btn-text) {
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            font-size: 1.142857142857143em;
+            line-height: inherit;
+            -webkit-transition: -webkit-transform .25s ease;
+            transition: transform .25s ease;
+
+            &:before {
+                display: block;
+                line-height: inherit;
+            }
+        }
+
+        &:hover {
+            > i,
+            > span:not(.edgtf-btn-text) {
+                @include edgtfTransform(translate3d(5px,0,0));
+            }
+        }
+    }
+}
+
+input[type=submit].edgtf-btn,
+button.edgtf-btn {
+    cursor: pointer;
+}
+/* ==========================================================================
+   Button shortcode style - end
+   ========================================================================== */

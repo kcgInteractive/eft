@@ -1,0 +1,115 @@
+/* ==========================================================================
+   Clients Carousel shortcode style - begin
+   ========================================================================== */
+
+.edgtf-clients-carousel-holder {
+    @include edgtfRelativeHolderLayout();
+    
+	.edgtf-cc-inner {
+		@include edgtfRelativeHolderLayout();
+	}
+	
+	.edgtf-cc-item {
+		@include edgtfRelativeHolderLayout();
+		
+		.touch & {
+			cursor: pointer;
+		}
+		
+		&.edgtf-cc-has-border {
+			
+			&:after {
+				content: '';
+				position: absolute;
+				display: block;
+				top: 15%;
+				width: 1px;
+				height: 70%;
+				right: 0;
+				background-color: #ccc;
+			}
+		}
+	}
+	
+	/***** Hover Types - begin *****/
+	
+	&.edgtf-cc-hover-switch-images {
+		
+		.edgtf-cc-item {
+			
+			&:hover {
+				
+				.edgtf-cc-image {
+					opacity: 0;
+				}
+				
+				.edgtf-cc-hover-image {
+					opacity: 1;
+				}
+			}
+			
+			.edgtf-cc-image {
+				position: relative;
+				display: block;
+				width: auto;
+				margin: 0 auto;
+				opacity: 1;
+				@include edgtfTransition(opacity .25s ease-out);
+			}
+			
+			.edgtf-cc-hover-image {
+				position: absolute;
+				top: 0;
+				left: 50%;
+				width: auto;
+				opacity: 0;
+				@include edgtfTransform(translateX(-50%));
+				@include edgtfTransition(opacity .25s ease-out);
+			}
+		}
+	}
+	
+	&.edgtf-cc-hover-roll-over {
+		
+		.edgtf-cc-item {
+			overflow: hidden;
+			
+			&:hover {
+				
+				.edgtf-cc-image {
+					@include edgtfTransform(translateY(100%));
+				}
+				
+				.edgtf-cc-hover-image {
+					@include edgtfTransform(translate(-50%, 0));
+				}
+			}
+			
+			.edgtf-cc-image {
+				position: relative;
+				display: block;
+				width: auto;
+				margin: 0 auto;
+				-webkit-transition: -webkit-transform .4s ease;
+				-moz-transition: -moz-transform .4s ease;
+				transition: transform .4s ease;
+			}
+			
+			.edgtf-cc-hover-image {
+				position: absolute;
+				top: 0;
+				left: 50%;
+				width: auto;
+				-webkit-transition: -webkit-transform .4s ease;
+				-moz-transition: -moz-transform .4s ease;
+				transition: transform .4s ease;
+				@include edgtfTransform(translate(-50%, -100%));
+			}
+		}
+	}
+	
+	/***** Hover Types - end *****/
+}
+/* ==========================================================================
+   Clients Carousel shortcode style - end
+   ========================================================================== */

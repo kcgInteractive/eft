@@ -1,0 +1,90 @@
+/* ==========================================================================
+   Video Button shortcode start styles
+   ========================================================================== */
+
+.edgtf-video-button-holder {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	
+	.edgtf-video-button-image {
+		@include edgtfRelativeHolderLayout();
+		
+		img {
+			display: block;
+		}
+	}
+	
+	.edgtf-video-button-play,
+	.edgtf-video-button-play-image {
+		@include edgtfAbsoluteHolderLayout();
+		
+		.edgtf-video-button-play-inner {
+			position: relative;
+			top: 50%;
+			left: 0;
+			display: block;
+			text-align: center;
+			@include edgtfTransform(translateY(-50%));
+		}
+	}
+	
+	.edgtf-video-button-play {
+		color: #fff;
+		font-size: 106px;
+		line-height: 1;
+		
+		span {
+			display: block;
+			line-height: inherit;
+			
+			&:before {
+				position: relative;
+				display: block;
+				line-height: inherit;
+			}
+		}
+	}
+	
+	.edgtf-video-button-play-image {
+		
+		&.edgtf-vb-has-hover-image {
+			
+			&:hover {
+				
+				img {
+					
+					&:first-child {
+						opacity: 0;
+					}
+				}
+			}
+		}
+		
+		img {
+			display: block;
+			margin: 0 auto;
+			@include edgtfTransition(none);
+			
+			&:first-child {
+				position: relative;
+				opacity: 1;
+				@include edgtfTransition(opacity .35s)
+			}
+			
+			&:nth-child(2) {
+				position: absolute;
+				top: 0;
+				left: 50%;
+				@include edgtfTransform(translateX(-50%) translateZ(0));
+				
+				.rev_slider_wrapper & {
+					@include edgtfTransform(translateZ(0));
+				}
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Video Button shortcode end styles
+   ========================================================================== */

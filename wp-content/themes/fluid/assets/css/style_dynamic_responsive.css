@@ -1,6 +1,6 @@
 @media only screen and (max-width: 1024px){
-/* generated in /Users/markrodriguez/GitHub/eft/wp-content/themes/fluid/assets/custom-styles/general-custom-styles-responsive.php fluid_edge_content_responsive_styles function */
-.edgtf-content .edgtf-content-inner > .edgtf-container > .edgtf-container-inner, .edgtf-content .edgtf-content-inner > .edgtf-full-width > .edgtf-full-width-inner { padding-top: 40px!important;}
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/assets/custom-styles/general-custom-styles-responsive.php fluid_edge_content_responsive_styles function */
+.edgtf-content .edgtf-content-inner > .edgtf-container > .edgtf-container-inner, .edgtf-content .edgtf-content-inner > .edgtf-full-width > .edgtf-full-width-inner { padding-top: 0px!important;}
 
 }
 
@@ -11,4 +11,16 @@
 }
 
 @media only screen and (max-width: 480px){
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/assets/custom-styles/general-custom-styles-responsive.php fluid_edge_h1_responsive_styles2 function */
+h1 { font-size: 35px;}
+
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/assets/custom-styles/general-custom-styles-responsive.php fluid_edge_h2_responsive_styles2 function */
+h2 { font-size: 21px;}
+
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/assets/custom-styles/general-custom-styles-responsive.php fluid_edge_h4_responsive_styles2 function */
+h4, .edgtf-testimonials-holder.edgtf-testimonials-standard .edgtf-testimonial-text, .edgtf-testimonials-holder .edgtf-testimonial-position { font-size: 25px;line-height: 32px;}
+
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/assets/custom-styles/general-custom-styles-responsive.php fluid_edge_text_responsive_styles2 function */
+body, p { font-size: 14px;}
+
 }

@@ -1,12 +1,147 @@
-/* generated in /Users/markrodriguez/GitHub/eft/wp-content/themes/fluid/assets/custom-styles/general-custom-styles.php fluid_edge_design_styles function */
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/assets/custom-styles/general-custom-styles.php fluid_edge_design_styles function */
+body, .edgtf-main-menu ul li a .edgtf-menu-featured-icon.edgtf-new-text { font-family: Roboto;}
+
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/assets/custom-styles/general-custom-styles.php fluid_edge_design_styles function */
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, a:hover, p a:hover, .edgtf-comment-holder .edgtf-comment-text .replay, .edgtf-comment-holder .edgtf-comment-text .comment-reply-link, .edgtf-comment-holder .edgtf-comment-text .comment-edit-link, .edgtf-comment-holder .edgtf-comment-text #cancel-comment-reply-link, .edgtf-owl-slider .owl-nav .owl-prev:hover .edgtf-prev-icon, .edgtf-owl-slider .owl-nav .owl-prev:hover .edgtf-next-icon, .edgtf-owl-slider .owl-nav .owl-next:hover .edgtf-prev-icon, .edgtf-owl-slider .owl-nav .owl-next:hover .edgtf-next-icon, .edgtf-main-menu ul li a:hover, .edgtf-drop-down .second .inner ul li.current-menu-ancestor > a, .edgtf-drop-down .second .inner ul li.current-menu-item > a, .edgtf-drop-down .wide .second .inner > ul > li.current-menu-ancestor > a, .edgtf-drop-down .wide .second .inner > ul > li.current-menu-item > a, .edgtf-header-vertical .edgtf-vertical-menu ul li a:hover, .edgtf-header-vertical .edgtf-vertical-menu ul li.edgtf-active-item > a, .edgtf-header-vertical .edgtf-vertical-menu ul li.current_page_item > a, .edgtf-header-vertical .edgtf-vertical-menu ul li.current-menu-item > a, .edgtf-header-vertical .edgtf-vertical-menu ul li.current-menu-ancestor > a, .edgtf-header-vertical .edgtf-vertical-menu ul li a:hover, .edgtf-mobile-header .edgtf-mobile-nav ul li a:hover, .edgtf-mobile-header .edgtf-mobile-nav ul li h5:hover, .edgtf-mobile-header .edgtf-mobile-nav ul ul li.current-menu-ancestor > a, .edgtf-mobile-header .edgtf-mobile-nav ul ul li.current-menu-item > a, .edgtf-mobile-header .edgtf-mobile-nav .edgtf-grid > ul > li.edgtf-active-item > a, .edgtf-side-menu-button-opener.opened, .edgtf-side-menu-button-opener:hover, .edgtf-side-menu a.edgtf-close-side-menu:hover, .edgtf-side-menu a:hover, nav.edgtf-fullscreen-menu ul li a:hover, nav.edgtf-fullscreen-menu ul li ul li.current-menu-ancestor > a, nav.edgtf-fullscreen-menu ul li ul li.current-menu-item > a, nav.edgtf-fullscreen-menu > ul > li.edgtf-active-item > a, .edgtf-search-opener:hover, .edgtf-search-page-holder .edgtf-search-page-form .edgtf-form-holder .edgtf-search-submit:hover, .edgtf-search-page-holder article.sticky .edgtf-post-title-area h3 a, .edgtf-search-cover .edgtf-search-close a:hover, .edgtf-blog-holder article.sticky .edgtf-post-title a, .edgtf-blog-holder.edgtf-blog-masonry article .edgtf-post-info-top > div a:hover, .edgtf-bl-standard-pagination ul li.edgtf-bl-pag-active a, .edgtf-blog-single-navigation .edgtf-blog-single-prev-holder .edgtf-blog-single-prev:hover, .edgtf-blog-single-navigation .edgtf-blog-single-prev-holder .edgtf-blog-single-next:hover, .edgtf-blog-single-navigation .edgtf-blog-single-next-holder .edgtf-blog-single-prev:hover, .edgtf-blog-single-navigation .edgtf-blog-single-next-holder .edgtf-blog-single-next:hover, .edgtf-blog-list-holder .edgtf-bli-content .edgtf-btn, .edgtf-blog-list-holder .edgtf-bli-content .edgtf-post-info-date > a, .edgtf-blog-slider-holder .edgtf-blog-slider-item .edgtf-item-info-section > div a:hover, .edgtf-blog-holder.edgtf-blog-single.edgtf-blog-single-standard article .edgtf-post-info-bottom .edgtf-blog-share .edgtf-list li a:hover, aside.edgtf-sidebar .widget.widget_pages ul li a:hover, aside.edgtf-sidebar .widget.widget_archive ul li a:hover, aside.edgtf-sidebar .widget.widget_categories ul li a:hover, aside.edgtf-sidebar .widget.widget_meta ul li a:hover, aside.edgtf-sidebar .widget.widget_recent_comments ul li a:hover, aside.edgtf-sidebar .widget.widget_recent_entries ul li a:hover, aside.edgtf-sidebar .widget.widget_nav_menu ul li a:hover, .wpb_widgetised_column .widget.widget_pages ul li a:hover, .wpb_widgetised_column .widget.widget_archive ul li a:hover, .wpb_widgetised_column .widget.widget_categories ul li a:hover, .wpb_widgetised_column .widget.widget_meta ul li a:hover, .wpb_widgetised_column .widget.widget_recent_comments ul li a:hover, .wpb_widgetised_column .widget.widget_recent_entries ul li a:hover, .wpb_widgetised_column .widget.widget_nav_menu ul li a:hover, .edgtf-side-menu .widget.widget_pages ul li a:hover, .edgtf-side-menu .widget.widget_archive ul li a:hover, .edgtf-side-menu .widget.widget_categories ul li a:hover, .edgtf-side-menu .widget.widget_meta ul li a:hover, .edgtf-side-menu .widget.widget_recent_comments ul li a:hover, .edgtf-side-menu .widget.widget_recent_entries ul li a:hover, .edgtf-side-menu .widget.widget_nav_menu ul li a:hover, .edgtf-top-bar .widget a:hover, .widget.widget_edgtf_twitter_widget .edgtf-twitter-widget.edgtf-twitter-standard li .edgtf-tweet-text a:hover, .widget.widget_edgtf_twitter_widget .edgtf-twitter-widget.edgtf-twitter-slider li .edgtf-twitter-icon i, .widget.widget_edgtf_twitter_widget .edgtf-twitter-widget.edgtf-twitter-slider li .edgtf-tweet-text a, .widget.widget_edgtf_twitter_widget .edgtf-twitter-widget.edgtf-twitter-slider li .edgtf-tweet-text span, .edgtf-side-menu .widget.widget_icl_lang_sel_widget ul li a:not([class*="lang_sel"]):hover, .edgtf-top-bar .widget_icl_lang_sel_widget #lang_sel ul li a:hover, .edgtf-top-bar .widget_icl_lang_sel_widget #lang_sel_click ul li a:hover, .edgtf-top-bar .widget_icl_lang_sel_widget .lang_sel_list_vertical ul li a:hover, .edgtf-btn.edgtf-btn-outline, .edgtf-image-slider-wrapper .edgtf-image-slider .owl-nav .owl-prev:hover .edgtf-prev-icon, .edgtf-image-slider-wrapper .edgtf-image-slider .owl-nav .owl-prev:hover .edgtf-next-icon, .edgtf-image-slider-wrapper .edgtf-image-slider .owl-nav .owl-next:hover .edgtf-prev-icon, .edgtf-image-slider-wrapper .edgtf-image-slider .owl-nav .owl-next:hover .edgtf-next-icon, .edgtf-social-share-holder.edgtf-dropdown .edgtf-social-share-dropdown-opener:hover, .edgtf-pl-filter-holder ul li.edgtf-pl-current span, .edgtf-pl-filter-holder ul li:hover span, .edgtf-pl-standard-pagination ul li.edgtf-pl-pag-active a, .edgtf-portfolio-slider-holder .owl-nav .owl-prev:hover .edgtf-prev-icon, .edgtf-portfolio-slider-holder .owl-nav .owl-prev:hover .edgtf-next-icon, .edgtf-portfolio-slider-holder .owl-nav .owl-next:hover .edgtf-prev-icon, .edgtf-portfolio-slider-holder .owl-nav .owl-next:hover .edgtf-next-icon, .edgtf-portfolio-list-holder.edgtf-pl-gallery-overlay article .edgtf-pli-text .edgtf-pli-category-holder a:hover, .edgtf-portfolio-single-holder .edgtf-ps-info-holder .edgtf-ps-info-item a:hover, .edgtf-main-menu ul li a .edgtf-menu-featured-icon.edgtf-new-text, .edgtf-team .edgtf-team-info-tc .edgtf-icon-shortcode:hover { color: #ffffff;}
+
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/assets/custom-styles/general-custom-styles.php fluid_edge_design_styles function */
+.edgtf-fullscreen-menu-opener:hover, .edgtf-fullscreen-menu-opener.edgtf-fm-opened, .edgtf-blog-slider-holder .edgtf-blog-slider-item .edgtf-section-button-holder a:hover, .edgtf-btn.edgtf-btn-simple { color: #ffffff!important;}
+
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/assets/custom-styles/general-custom-styles.php fluid_edge_design_styles function */
+.edgtf-st-loader .pulse, .edgtf-st-loader .double_pulse .double-bounce1, .edgtf-st-loader .double_pulse .double-bounce2, .edgtf-st-loader .cube, .edgtf-st-loader .rotating_cubes .cube1, .edgtf-st-loader .rotating_cubes .cube2, .edgtf-st-loader .stripes > div, .edgtf-st-loader .wave > div, .edgtf-st-loader .two_rotating_circles .dot1, .edgtf-st-loader .two_rotating_circles .dot2, .edgtf-st-loader .five_rotating_circles .container1 > div, .edgtf-st-loader .five_rotating_circles .container2 > div, .edgtf-st-loader .five_rotating_circles .container3 > div, .edgtf-st-loader .atom .ball-1:before, .edgtf-st-loader .atom .ball-2:before, .edgtf-st-loader .atom .ball-3:before, .edgtf-st-loader .atom .ball-4:before, .edgtf-st-loader .clock .ball:before, .edgtf-st-loader .mitosis .ball, .edgtf-st-loader .lines .line1, .edgtf-st-loader .lines .line2, .edgtf-st-loader .lines .line3, .edgtf-st-loader .lines .line4, .edgtf-st-loader .fussion .ball, .edgtf-st-loader .fussion .ball-1, .edgtf-st-loader .fussion .ball-2, .edgtf-st-loader .fussion .ball-3, .edgtf-st-loader .fussion .ball-4, .edgtf-st-loader .wave_circles .ball, .edgtf-st-loader .pulse_circles .ball, #submit_comment, .post-password-form input[type='submit'], input.wpcf7-form-control.wpcf7-submit, #edgtf-back-to-top > span, .vc_row .edgtf-row-animated-bg, .edgtf-main-menu > ul > li > a > span.item_outer .item_text:after, .edgtf-blog-holder article.format-quote .edgtf-post-text, .edgtf-blog-holder article.format-audio .edgtf-blog-audio-holder .mejs-container .mejs-controls > .mejs-time-rail .mejs-time-total .mejs-time-current, .edgtf-blog-holder article.format-audio .edgtf-blog-audio-holder .mejs-container .mejs-controls > a.mejs-horizontal-volume-slider .mejs-horizontal-volume-current, .edgtf-blog-holder.edgtf-blog-standard article.format-quote .edgtf-post-text, .edgtf-blog-single-navigation .edgtf-blog-single-prev-holder .edgtf-blog-single-nav-thumb:after, .edgtf-blog-single-navigation .edgtf-blog-single-next-holder .edgtf-blog-single-nav-thumb:after, .widget.widget_search button:hover, .widget.widget_tag_cloud a:hover, .edgtf-side-menu .widget.widget_search button, .edgtf-accordion-holder.edgtf-ac-boxed .edgtf-title-holder.ui-state-active, .edgtf-accordion-holder.edgtf-ac-boxed .edgtf-title-holder.ui-state-hover, .edgtf-accordion-holder.edgtf-ac-standard .edgtf-title-holder.ui-state-active .edgtf-accordion-mark, .edgtf-accordion-holder.edgtf-ac-standard .edgtf-title-holder.ui-state-hover .edgtf-accordion-mark, .edgtf-btn.edgtf-btn-solid, .edgtf-icon-shortcode.edgtf-circle, .edgtf-icon-shortcode.edgtf-square, .edgtf-icon-shortcode.edgtf-dropcaps.edgtf-circle, .edgtf-progress-bar .edgtf-pb-content-holder .edgtf-pb-content, .edgtf-tabs.edgtf-tabs-standard .edgtf-tabs-nav li.ui-state-active a, .edgtf-tabs.edgtf-tabs-standard .edgtf-tabs-nav li.ui-state-hover a, .edgtf-tabs.edgtf-tabs-boxed .edgtf-tabs-nav li.ui-state-active a, .edgtf-tabs.edgtf-tabs-boxed .edgtf-tabs-nav li.ui-state-hover a, .edgtf-image-gallery .edgtf-ig-grid .edgtf-ig-image .edgtf-ig-image-mark { background-color: #ffffff;}
+
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/assets/custom-styles/general-custom-styles.php fluid_edge_design_styles function */
+.edgtf-btn.edgtf-btn-outline:not(.edgtf-btn-custom-hover-bg):hover, .edgtf-price-table.edgtf-pt-button-dark .edgtf-pt-inner .edgtf-btn.edgtf-btn-solid:hover, .widget.woocommerce.widget_price_filter .price_slider_wrapper .ui-widget-content .ui-slider-range { background-color: #ffffff!important;}
+
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/assets/custom-styles/general-custom-styles.php fluid_edge_design_styles function */
+.edgtf-st-loader .pulse_circles .ball, #edgtf-back-to-top > span, .edgtf-btn.edgtf-btn-outline, .edgtf-shopping-cart-dropdown { border-color: #ffffff;}
+
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/assets/custom-styles/general-custom-styles.php fluid_edge_design_styles function */
+.edgtf-btn.edgtf-btn-outline:not(.edgtf-btn-custom-border-hover):hover, .edgtf-price-table.edgtf-pt-button-dark .edgtf-pt-inner .edgtf-btn.edgtf-btn-solid:hover { border-color: #ffffff!important;}
+
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/assets/custom-styles/general-custom-styles.php fluid_edge_design_styles function */
+.edgtf-wrapper-inner, .edgtf-content { background-color: #ffffff;}
+
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/assets/custom-styles/general-custom-styles.php fluid_edge_design_styles function */
+::selection { background: #6ea9d3;}
+
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/assets/custom-styles/general-custom-styles.php fluid_edge_design_styles function */
+::-moz-selection { background: #6ea9d3;}
+
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/assets/custom-styles/general-custom-styles.php fluid_edge_design_styles function */
 .edgtf-boxed .edgtf-wrapper { background-attachment: fixed;}
 
-/* generated in /Users/markrodriguez/GitHub/eft/wp-content/themes/fluid/assets/custom-styles/general-custom-styles.php fluid_edge_content_styles function */
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/assets/custom-styles/general-custom-styles.php fluid_edge_content_styles function */
 .edgtf-content .edgtf-content-inner > .edgtf-full-width > .edgtf-full-width-inner { padding-top: 0px;}
 
-/* generated in /Users/markrodriguez/GitHub/eft/wp-content/themes/fluid/assets/custom-styles/general-custom-styles.php fluid_edge_content_styles function */
-.edgtf-content .edgtf-content-inner > .edgtf-container > .edgtf-container-inner { padding-top: 40px;}
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/assets/custom-styles/general-custom-styles.php fluid_edge_content_styles function */
+.edgtf-content .edgtf-content-inner > .edgtf-container > .edgtf-container-inner { padding-top: 0px;}
 
-/* generated in /Users/markrodriguez/GitHub/eft/wp-content/themes/fluid/framework/modules/header/custom-styles/header.php fluid_edge_header_top_bar_styles function */
-.edgtf-top-bar { background-color: rgba(132, 132, 132, 75);}
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/assets/custom-styles/general-custom-styles.php fluid_edge_h1_styles function */
+h1 { color: #ffffff;font-family: Roboto Slab;font-size: 64px;font-style: normal;font-weight: 700;}
 
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/assets/custom-styles/general-custom-styles.php fluid_edge_h2_styles function */
+h2 { color: #395b73;font-family: Roboto;font-size: 24px;line-height: 28px;font-style: normal;font-weight: 300;}
+
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/assets/custom-styles/general-custom-styles.php fluid_edge_h3_styles function */
+h3 { color: #395b73;font-family: Roboto Slab;font-size: 16px;line-height: 21px;font-style: normal;font-weight: 700;text-transform: capitalize;}
+
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/assets/custom-styles/general-custom-styles.php fluid_edge_h4_styles function */
+h4, .edgtf-testimonials-holder.edgtf-testimonials-standard .edgtf-testimonial-text, .edgtf-testimonials-holder .edgtf-testimonial-position { color: #ffffff;font-family: Roboto Slab;font-size: 48px;line-height: 63px;font-style: normal;font-weight: 300;letter-spacing: 1px;text-transform: none;}
+
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/assets/custom-styles/general-custom-styles.php fluid_edge_h5_styles function */
+h5 { color: #ffffff;font-family: Roboto Slab;font-size: 24px;line-height: 32px;font-style: normal;font-weight: 300;}
+
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/assets/custom-styles/general-custom-styles.php fluid_edge_h6_styles function */
+h6 { color: #395b73;font-family: Roboto Slab;font-size: 144px;line-height: 190px;font-style: normal;font-weight: 700;}
+
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/assets/custom-styles/general-custom-styles.php fluid_edge_text_styles function */
+p { color: #444444;font-family: Roboto;font-size: 16px;font-style: normal;font-weight: 400;}
+
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/assets/custom-styles/general-custom-styles.php fluid_edge_link_styles function */
+a, p a { color: #395b73;font-style: normal;font-weight: 500;text-decoration: none;}
+
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/assets/custom-styles/general-custom-styles.php fluid_edge_link_hover_styles function */
+a:hover, p a:hover { color: #395b73;text-decoration: none;}
+
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/assets/custom-styles/general-custom-styles.php fluid_edge_link_hover_styles function */
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color: #395b73;}
+
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/framework/modules/header/custom-styles/header.php fluid_edge_header_top_bar_styles function */
+.edgtf-top-bar { height: 42px;}
+
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/framework/modules/header/custom-styles/header.php fluid_edge_header_top_bar_styles function */
+.edgtf-top-bar .edgtf-logo-wrapper a { max-height: 42px;}
+
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/framework/modules/header/custom-styles/header.php fluid_edge_header_top_bar_styles function */
+.edgtf-top-bar { background-color: rgba(255, 255, 255, 1);}
+
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/framework/modules/header/custom-styles/header.php fluid_edge_header_area_styles function */
+.edgtf-page-header { background-color: rgba(255, 255, 255, 0);}
+
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/framework/modules/header/custom-styles/header.php fluid_edge_header_area_styles function */
+.edgtf-page-header .edgtf-menu-area { border-bottom-color: #000000;}
+
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/framework/modules/header/custom-styles/header.php fluid_edge_header_standard_menu_area_styles function */
+.edgtf-header-standard .edgtf-page-header .edgtf-logo-wrapper a { max-height: 80px;}
+
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/framework/modules/header/custom-styles/header.php fluid_edge_header_standard_menu_area_styles function */
+.edgtf-header-standard .edgtf-page-header .edgtf-menu-area { height: 80px;}
+
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/framework/modules/header/custom-styles/header.php fluid_edge_vertical_menu_styles function */
+.edgtf-header-vertical .edgtf-vertical-area-background { background-color: #ffffff;opacity: 0;}
+
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/framework/modules/header/custom-styles/header.php fluid_edge_sticky_header_styles function */
+.edgtf-page-header .edgtf-sticky-header .edgtf-sticky-holder { background-color: rgba(255, 255, 255, 1);}
+
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/framework/modules/header/custom-styles/header.php fluid_edge_sticky_header_styles function */
+.edgtf-page-header .edgtf-sticky-header .edgtf-sticky-holder { border-color: #6ea9d3;}
+
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/framework/modules/header/custom-styles/header.php fluid_edge_sticky_header_styles function */
+.edgtf-page-header .edgtf-sticky-header { height: 75px;}
+
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/framework/modules/header/custom-styles/header.php fluid_edge_sticky_header_styles function */
+.edgtf-page-header .edgtf-sticky-header .edgtf-logo-wrapper a { max-height: 75px;}
+
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/framework/modules/header/custom-styles/header.php fluid_edge_sticky_header_styles function */
+.edgtf-main-menu.edgtf-sticky-nav > ul > li > a { color: #f27318;font-family: Roboto;font-size: 12px;line-height: 14px;font-style: normal;font-weight: 500;text-transform: capitalize;}
+
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/framework/modules/header/custom-styles/header.php fluid_edge_sticky_header_styles function */
+.edgtf-main-menu.edgtf-sticky-nav > ul > li:hover > a, .edgtf-main-menu.edgtf-sticky-nav > ul > li.edgtf-active-item > a { color: #395b73;}
+
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/framework/modules/header/custom-styles/header.php fluid_edge_fixed_header_styles function */
+.edgtf-page-header .edgtf-fixed-wrapper.fixed .edgtf-menu-area { background-color: rgba(255, 255, 255, 0)!important;}
+
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/framework/modules/header/custom-styles/header.php fluid_edge_main_menu_styles function */
+.edgtf-main-menu > ul > li > a { color: #ffffff;font-family: Roboto;font-size: 12px;line-height: 14px;font-style: normal;font-weight: 500;text-transform: capitalize;}
+
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/framework/modules/header/custom-styles/header.php fluid_edge_main_menu_styles function */
+.edgtf-main-menu > ul > li > a:hover { color: #395b73;}
+
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/framework/modules/header/custom-styles/header.php fluid_edge_main_menu_styles function */
+.edgtf-main-menu > ul > li.edgtf-active-item > a { color: #395b73;}
+
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/framework/modules/header/custom-styles/header.php fluid_edge_main_menu_styles function */
+.edgtf-light-header .edgtf-page-header > div:not(.edgtf-sticky-header):not(.edgtf-fixed-wrapper) .edgtf-main-menu > ul > li > a:hover { color: #395b73;}
+
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/framework/modules/header/custom-styles/header.php fluid_edge_main_menu_styles function */
+.edgtf-light-header .edgtf-page-header > div:not(.edgtf-sticky-header):not(.edgtf-fixed-wrapper) .edgtf-main-menu > ul > li.edgtf-active-item > a { color: #395b73;}
+
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/framework/modules/header/custom-styles/header.php fluid_edge_main_menu_styles function */
+.edgtf-dark-header .edgtf-page-header > div:not(.edgtf-sticky-header):not(.edgtf-fixed-wrapper) .edgtf-main-menu > ul > li > a:hover { color: #395b73;}
+
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/framework/modules/header/custom-styles/header.php fluid_edge_main_menu_styles function */
+.edgtf-dark-header .edgtf-page-header > div:not(.edgtf-sticky-header):not(.edgtf-fixed-wrapper) .edgtf-main-menu > ul > li.edgtf-active-item > a { color: #395b73;}
+
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/framework/modules/header/custom-styles/header.php fluid_edge_main_menu_styles function */
+.edgtf-drop-down .second .inner > ul > li > a { color: #395b73;}
+
+/* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/framework/modules/header/custom-styles/header.php fluid_edge_main_menu_styles function */
+.edgtf-drop-down .second .inner > ul > li > a:hover, .edgtf-drop-down .second .inner > ul > li.current-menu-ancestor > a, .edgtf-drop-down .second .inner > ul > li.current-menu-item > a { color: #395b73 !important;}
+
+            @media only screen and (max-width: 1024px) {
+	            /* generated in /home/kcginteractivewp/public_html/eftanalytics/wp-content/themes/fluid/framework/modules/header/custom-styles/mobile-header.php fluid_edge_mobile_logo_styles function */
+.edgtf-mobile-header .edgtf-mobile-logo-wrapper a { height: 40px !important;}
+
+            }
+        
